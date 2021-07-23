@@ -1,0 +1,9 @@
+section #stride-landing-header{
+    height : 100vh !important;
+    width: 100% !important; 
+    background-color: pink !important;
+}
+section #stride-landing-banner{
+    height: 100vh !important;
+    width: 100% !important;
+}
