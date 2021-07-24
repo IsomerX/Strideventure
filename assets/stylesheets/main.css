@@ -1,5 +1,4 @@
 body{
-    height: 2000vh;
     font-family: 'Raleway', sans-serif !important;
     font-size: 22px!important;
 }
@@ -66,12 +65,17 @@ section#desc {
   }
 
 .card-gallery .card{
+    position relative;
     height: 65vh;
     min-width: 30%;
     background-color: pink;
     padding: 40px;
     color: white;
     margin: 0 20px;
+}
+
+.card:first-child{
+    left: 0
 }
 
 .card-gallery .card-heading{
@@ -108,7 +112,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 10%;
   }
   
   .logo {
@@ -116,7 +120,6 @@ header {
   }
   
   .nav__links a,
-  .cta,
   .overlay__content a {
     font-weight: 700;
     font-size:15px;
@@ -198,12 +201,18 @@ header {
     display: flex;
     justify-content: center;
 }
+/* hamburger */
 
+
+
+
+
+/* hamburger end */
 
 /* news grid */
 
 section#news{
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-color: #f1f1f1;
     padding-top: 5vh;
@@ -215,6 +224,73 @@ section#news{
     font-size: 3em;
     color: #052073;
     font-weight: 600;
+    padding: 5vh 0;
+}
+
+.news-gallery{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-item{
+    width: 100%;
+}
+
+.news-item img{
+    width: 100%;
+}
+
+.news-item .news-title{
+    font-size: 1.7em;
+    padding: 30px 0;
+    font-weight: 600;
+    color: #052073;
+}
+
+.news-item .news-subtitle{ 
+    color: #646464;
+    font-weight: 500;
+
 }
 
 
+/* footer */
+
+
+.site-footer
+{
+    height: 300px;
+  background-color:#012063;
+  padding:45px 0 20px;
+  font-size:12px;
+  line-height:24px;
+  color:#fff;
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#fff
+}
+
+.copyright-text
+{
+  margin:0
+}
+
+
+/* footer end */
