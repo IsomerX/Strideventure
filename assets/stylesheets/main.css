@@ -1,0 +1,32 @@
+section#desc {
+    height: 100vh;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.interest{
+    width: 70%;
+    height: 30vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.desc-title{
+    width: 30%;
+    font-weight: 600;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    color: #081b52;
+}
+
+.desc-description{
+    width: 70%;
+}
+
+.banner{
+    background-image: 
+}
