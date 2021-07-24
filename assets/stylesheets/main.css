@@ -40,7 +40,7 @@ section#desc {
 .alpha{
     width: 100%;
     height: 100vh;
-    background-image: url("../images/landing/bg-banner.jpg") !important;
+    background-image: url("../images/landing/alpha.jpg") !important;
     background-position: center;
     background-size: cover;
 }
@@ -99,6 +99,63 @@ section#desc {
 .orange{
     background-color: #fc6b00 !important;
 }
+
+
+/* nav menu */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-weight: 700;
+    font-size:15px;
+    color: #133178;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+
+
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -118,13 +175,46 @@ section#desc {
     transform: rotate(45deg) translate(-8px, -8px);
   }
   
-  .logo{
+  .logopic{
       width:150px;
   }
-  header{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 30px 10px;
 
-  }
+/* company gallery grid  */
+
+.company-gallery{
+    width: 70%;
+    padding: 5vh 0 10vh 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.company-gallery .item img{
+    width: 50%;
+}
+
+.company-gallery .item{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* news grid */
+
+section#news{
+    height: 100vh;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding-top: 5vh;
+}
+
+#news h1.news-title{
+    text-align: center;
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 3em;
+    color: #052073;
+    font-weight: 600;
+}
+
+
