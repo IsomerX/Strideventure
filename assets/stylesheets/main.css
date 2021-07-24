@@ -1,32 +1,130 @@
+body{
+    height: 2000vh;
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 22px!important;
+}
 section#desc {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-color: #f1f1f1;
 }
 
 .interest{
     width: 70%;
-    height: 30vh;
+    height: 35vh;
     margin: 0 auto;
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
     align-items: center;
-    font-family: 'Manrope', sans-serif;
+    flex-wrap: wrap;
 }
 
 .desc-title{
-    width: 30%;
-    font-weight: 600;
-    font-size: 1.3em;
+    width: 35%;
+    font-weight: 300;
+    font-size: 1.7em;
     line-height: 1.3em;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: #081b52;
+    flex: 1 0 auto;
 }
 
 .desc-description{
-    width: 70%;
+    width: 65%;
+    color: #646464;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.3em
 }
 
-.banner{
-    background-image: 
+.alpha{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/landing/bg-banner.jpg") !important;
+    background-position: center;
+    background-size: cover;
 }
+
+
+/* card gallery */
+
+.card-gallery{
+    width: 70%;
+    height: 65vh;
+    /* background-color: orange; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: auto;
+}
+
+
+.card-gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+.card-gallery .card{
+    height: 65vh;
+    min-width: 30%;
+    background-color: pink;
+    padding: 40px;
+    color: white;
+    margin: 0 20px;
+}
+
+.card-gallery .card-heading{
+    font-size: 1.5em;
+    color: white
+}
+
+.card-gallery .card-para{
+    font-weight: 300;
+    letter-spacing: 0.1px;
+}
+
+.card-img{
+    height: 120px;
+}
+
+.green{
+    background-color: #a7cd42 !important;
+}
+
+.red{
+    background-color: #da3144 !important;
+}
+
+.orange{
+    background-color: #fc6b00 !important;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  
+  .logo{
+      width:150px;
+  }
+  header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10px;
+
+  }
