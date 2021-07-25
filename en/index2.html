@@ -26,40 +26,50 @@
       rel="stylesheet"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <!-- header start -->
-    <section id="banner">
-    <div class="alpha">
-      <header>
-        <a href="/"><img src="..\assets\images\logo.png" class="logopic" alt="logo"></a>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Investments</a></li>
-            </ul>
-        </nav>
-        <div class="hamburger" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+    <section id="banner-t">
+      <span class="nav">
+        <div class="logo"><a href="/"><img src="..\assets\images\logo.png" class="logopic" alt="logo"></a></div>
+        <div class="menu">
+          <a href="#">About</a><a href="#">Team</a><a href="#">Investments</a>
         </div>
-    </header>
+        <div class="hamburger2">
+          <div class="hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </span>
+    </section>
+    <div class="alpha">
+    </div>
+
+  <section id="about">
+    <div class="interest">
+      <span class="desc-title">
+        About Us
+      </span>
+      <span class="desc-description">
+        <span style="font-weight:400; color: #172869; letter-spacing: 0.1px; font-size: 1.2em;">Stride Ventures provides comprehensive credit solutions to new-age businesses in India.</span> 
+        <br><br>
+        We follow a relationship driven approach to provide customised debt capital shaped by specific business requirements. Stride plays a strategic role in the long term journey of its portfolio companies through deep penetration in the banking and venture ecosystem.
     </div>
   </section>
-<!-- header end -->
-  <!-- insert section anim here -->
 
+  <div id="counter">
+
+  </div>
 
   <section
       data-scroll-section
@@ -302,7 +312,7 @@
         />
       </picture>
 
-      <div class="container-v is-hidden--sm-down">
+      <!-- <div class="container-v is-hidden--sm-down">
         <div class="ui-dark">
           <h2
             class="advantages-title"
@@ -313,7 +323,9 @@
             Advantages
           </h2>
         </div>
-      </div>
+      </div> -->
+
+      <div class="spaceing" style="height: 400px;"></div>
 
       <div class="advantages-layout">
         <div class="row background-container">
@@ -880,36 +892,38 @@
     </section>
 
     <section id="news">
-      <h1 class="news-title">News</h1>
       <div class="news-gallery">
+        <h1 class="news-title">News</h1>
         <div class="news-item">
-          <img src="../assets/images/news/1.jpg" alt="">
-          <div class="news-title">Heading 1</div>
-          <div class="news-subtitle">Press - Jul, 2021</div>
+          <img src="../assets/images/news/news1.jpg" alt="">
+          <a href="https://www.livemint.com/companies/news/stride-ventures-launches-second-debt-fund-targets-rs-1-000-crore-corpus-11621921619269.html"><div class="news-title">Stride Ventures launches debt fund, targets Rs. 1000 crore corpus</div>
+          </a>
+            <div class="news-subtitle">Press - 25 May 2021</div>
+        </div>
+        <div class="news-item">
+          <img src="../assets/images/news/new2.jpg" alt="">
+          <a href="https://www.cnbctv18.com/startup/detect-technologies-raises-12-mn-from-accel-elevation-capital-others-9822341.htm"><div class="news-title">Detect Technologies raises $12 mn from Accel, Elevation Capital, others</div>
+          </a>
+            <div class="news-subtitle">Press - Jun 30, 2021</div>
+        </div>
+        <div class="news-item">
+          <img src="../assets/images/news/new3.jpg" alt="">
+          <a href="https://yourstory.com/2021/06/funding-alert-digital-healthcare-startup-medibuddy-debt-stride-ventures/amp">
+          <div class="news-title">Digital healthcare startup MediBuddy raises Rs 25 Cr in debt from Stride Ventures </div>
+          </a>
+          <div class="news-subtitle">Press - June 8, 2021</div>
+        </div>
+        <div class="news-item">
+          <img src="../assets/images/news/news4.png" alt="">
+          <a href="https://yourstory.com/2021/07/venture-debt-firm-stride-ventures-financial-institution-startups/amp">
+          <div class="news-title">How venture debt firm Stride Ventures wants to be the go-to financial institution for startups
+          </div>
+          </a>
+          <div class="news-subtitle">Press - July 12, 2021</div>
         </div>
         <div class="news-item">
           <img src="../assets/images/news/1.jpg" alt="">
-          <div class="news-title">Heading 2</div>
-          <div class="news-subtitle">Press - Jul, 2021</div>
-        </div>
-        <div class="news-item">
-          <img src="../assets/images/news/1.jpg" alt="">
-          <div class="news-title">Heading 3</div>
-          <div class="news-subtitle">Press - Jul, 2021</div>
-        </div>
-        <div class="news-item">
-          <img src="../assets/images/news/1.jpg" alt="">
-          <div class="news-title">Heading 4</div>
-          <div class="news-subtitle">Press - Jul, 2021</div>
-        </div>
-        <div class="news-item">
-          <img src="../assets/images/news/1.jpg" alt="">
-          <div class="news-title">Heading 5</div>
-          <div class="news-subtitle">Press - Jul, 2021</div>
-        </div>
-        <div class="news-item">
-          <img src="../assets/images/news/1.jpg" alt="">
-          <div class="news-title">Heading 6</div>
+          <div class="news-title">Stride Ventures shook the world</div>
           <div class="news-subtitle">Press - Jul, 2021</div>
         </div>
       </div>

@@ -5907,11 +5907,6 @@ input:checked ~ .form-control-checkbox__icon:before {
   transition-timing-function: cubic-bezier(0.25, 0.74, 0.22, 0.99);
   transition-property: border-color;
 }
-.form-control-checkbox a.is-active,
-.has-hover .form-control-checkbox a:hover,
-.has-hover .form-control-checkbox a:hover:active {
-  border-color: rgba(229, 47, 66, 0.35);
-}
 .is-ie .form-control-checkbox a {
   vertical-align: top;
 }
