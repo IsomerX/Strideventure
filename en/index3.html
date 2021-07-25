@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>How to use Slick Slider for your website</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet">
-	<style>
-    body {
-      margin: 0;
-    }
-    #wrapper {
-      width: 100%;
-      margin: 0 auto;
-    }
-    img {
-      width: 100%;
-    }
-  </style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="../assets/stylesheets/global3f99.css" />
+	<link rel="stylesheet" href="../assets/stylesheets/landing3f99.css" />
+	<link rel="stylesheet" href="../assets/stylesheets/home.css" />
+	<link rel="stylesheet" href="../assets/stylesheets/main.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> </head>
+	<link rel="stylesheet" href="../assets/stylesheets/index3.css">
 </head>
 <body>
-	<div class="thing" id="wrapper">
-		<div><img alt="slider image" src="https://i.postimg.cc/fbppLHvf/1.jpg"></div>
-		<div><img alt="slider image" src="https://i.postimg.cc/Vk5KCqvG/2.jpg"></div>
-		<div><img alt="slider image" src="https://i.postimg.cc/QtDg01Nr/3.jpg"></div>
+	<section id="banner-t"> <span class="nav">
+	<div class="logo"><a href="/"><img src="..\assets\images\logo.png" class="logopic" alt="logo"></a></div>
+	<div class="menu">
+		<a href="#">About</a><a href="#">Team</a><a href="#">Investments</a>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-	</script> 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js">
-	</script> 
+	<div class="hamburger2">
+		<div class="hamburger" onclick="myFunction(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+		</div>
+	</div>
+	</span> </section>
+	<div class="alpha"></div>
+
+	<div id="ext-menu">
+		<div><a href="">LP Login</a></div>
+		<div><a href="">News / Media / Noteworthy</a></div>
+		<div><a href="">Podcast : Stride Stories</a></div>
+		<div><a href="">Connect</a></div>
+		<div><a href="">Career</a></div>
+	</div>
+
+
 	<script>
-	       $(document).ready(function(){
-	          $('.thing').slick({
-	              dots: true,
-	              arrows: false,
-	              autoplay: true,
-	              autoplaySpeed: 2000
-	          }) 
-	       });
+		function myFunction(x) {
+			x.classList.toggle("change");
+			document.getElementById("ext-menu").classList.toggle("show-menu")
+
+			document.querySelector(".alpha").classList.toggle("blur")
+		}
 	</script>
 </body>
 </html>

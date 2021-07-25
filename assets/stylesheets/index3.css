@@ -1,0 +1,53 @@
+section#banner-t{
+    z-index: 1000;
+    position: relative;
+}
+
+.alpha  {
+    position: relative;
+    z-index: -1;
+}
+
+#ext-menu{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 999 !important;
+    top: 0;
+    display: flex;
+    transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: none;
+}
+
+.show-menu{
+    transition: .5s all linear;
+    display: flex !important;
+}
+
+#ext-menu a{
+    color: white !important;
+    font-size: 3em;
+    text-decoration: none;
+    transition: 0.2s all linear;
+    font-weight: 100;
+}
+
+#ext-menu div{
+    padding: 5vh;
+    height: 150px;
+}
+
+#ext-menu div:hover > a{
+    font-size: 3.2em;
+    font-weight: 300;
+    border-bottom: 2px solid white;
+}
+
+.blur{
+    filter: blur(4px);
+}

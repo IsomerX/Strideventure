@@ -137,6 +137,26 @@ header {
   transform: rotate(45deg);
 }
 
+.bar1{
+  transition: 0.1s all linear;
+}
+.bar2{
+  transition: 0.15s all linear;
+}
+.bar3{
+  transition: 0.2s all linear;
+}
+
+.hamburger:hover > .bar1{
+  background-color: white;
+}
+.hamburger:hover > .bar2{
+  background-color: white;
+}
+.hamburger:hover > .bar3{
+  background-color: white;
+}
+
 .change .bar2 {
   opacity: 0;
 }
