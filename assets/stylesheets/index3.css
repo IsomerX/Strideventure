@@ -17,7 +17,7 @@ section#banner-t{
     align-items: baseline;
     justify-content: center;
     position: absolute;
-    z-index: 999 !important;
+    z-index: 63546999 !important;
     top: 0;
     right: -100%;
     display: flex;
@@ -47,28 +47,8 @@ section#banner-t{
     display: flex;
     justify-content: baseline;
     align-items: center;
+    transition: 0.5s all linear;
     /* background-color: pink; */
-}
-#ext-menu div:nth-child(2n){
-    background-color: pink;
-}
-
-#ext-menu div::before{
-    content: '';
-    left: 0;
-    margin-top: 100%;
-    display: block;
-    position: absolute;
-    background-color: rgba(99, 61, 67, 0.3);
-    height: 150px;
-    padding: 5vh;
-    width: 100%;
-    z-index: -1;
-    opacity: 0;
-}
-#ext-menu div:hover + #ext-menu div::before{
-    margin-top: 0;
-    opacity: 1 !important;
 }
 
 /* add the bottom to up animation */
