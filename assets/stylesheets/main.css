@@ -469,6 +469,7 @@ footer{
   border-radius: 50%;
   animation: circle 4s ease-in infinite;
   border: 5px solid red;
+  pointer-events: none; 
 }
 
 @keyframes circle {
