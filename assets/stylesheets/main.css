@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* font-family: 'Raleway', sans-serif !important; */
   /* font-family: 'Montserrat', sans-serif !important; */
@@ -316,9 +320,10 @@ span.nav {
 
 .menu a {
   color: #07215e !important;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.9em;
   transition: 0.2s all linear;
+  text-decoration: none;
 }
 
 .menu a:hover {
@@ -385,6 +390,7 @@ span.nav {
 
 .unit p{
   color: rgba(255,255,255, 0.8) !important;
+  font-weight: 300;
 }
 
 footer{
