@@ -26,8 +26,8 @@ section#desc {
 
 .desc-title {
   width: 35%;
-  font-weight: 500;
-  font-size: 1.7em;
+  /* font-weight: 500; */
+  font-size: 1.3em;
   line-height: 1.3em;
   letter-spacing: 0.5px;
   color: #081b52;
@@ -356,7 +356,7 @@ span.nav {
 }
 
 #counters .counter-heading{
-  color: rgba(255,255,255, 0.7);
+  color: rgba(255,255,255, 1);
   font-size: 1.1em;
   letter-spacing: 0.4px;
   font-weight: 300 !important;
