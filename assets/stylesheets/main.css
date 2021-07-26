@@ -43,8 +43,9 @@ section#desc {
 }
 
 .alpha {
+  
+  height: 973px;
   width: 100%;
-  height: 100vh;
   background-image: url("../images/landing/bg-banner1.jpg") !important;
   background-position: center;
   background-size: cover;
@@ -57,21 +58,22 @@ section#desc {
   height: 65vh;
   /* background-color: orange; */
   /* margin: 0 auto; */
-  /* display: flex;
-  justify-content: space-evenly; */
-  /* align-items: center; */
+  /* display: flex; */
+  align-items: center; 
   font-family: "Montserrat", sans-serif;
 }
 
 
 .card-gallery .card {
   position: relative;
-  height: 65vh;
-  width: 30%;
+  height: 400px;
+  width: 400px;
   background-color: pink;
   padding: 40px;
   color: white;
   margin: 0 20px;
+  top: 50%;
+  transform:translateY(-50%);
 }
 
 .card:first-child {
@@ -79,13 +81,17 @@ section#desc {
 }
 
 .card-gallery .card-heading {
-  font-size: 1.5em;
+  font-size: 5em;
   color: white;
+  font-weight: 300;
+  line-height: 100px;
 }
 
 .card-gallery .card-para {
   font-weight: 300;
   letter-spacing: 0.1px;
+  position: relative;
+  margin-top: 50%;
 }
 
 .card-img {
@@ -93,15 +99,19 @@ section#desc {
 }
 
 .green {
-  background-color: #a7cd42 !important;
+  background-color: #a6cc43 !important;
 }
 
 .red {
-  background-color: #da3144 !important;
+  background-color: #d83143 !important;
 }
 
 .orange {
-  background-color: #fc6b00 !important;
+  background-color: #f86b00 !important;
+}
+
+.blue{
+  background-color: #001f62 !important;
 }
 
 /* nav menu */
@@ -135,26 +145,6 @@ header {
 .change .bar1 {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-
-.bar1{
-  transition: 0.1s all linear;
-}
-.bar2{
-  transition: 0.15s all linear;
-}
-.bar3{
-  transition: 0.2s all linear;
-}
-
-.hamburger:hover > .bar1{
-  background-color: white;
-}
-.hamburger:hover > .bar2{
-  background-color: white;
-}
-.hamburger:hover > .bar3{
-  background-color: white;
 }
 
 .change .bar2 {
@@ -231,9 +221,9 @@ section#news {
 
 .news-item:hover > img{
   /* -webkit-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.75); */
-transform: scale(1.03);
+  -moz-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.75); */
+  transform: scale(1.03);
 }
 
 .news-item img {
@@ -316,7 +306,7 @@ span.nav {
 }
 
 .menu a {
-  color: #07215e !important;
+  color: white !important;
   font-weight: 400;
   font-size: 0.9em;
   transition: 0.2s all linear;
@@ -324,7 +314,12 @@ span.nav {
 }
 
 .menu a:hover {
-  color: white !important;
+  color: rgba(255,255,255, 0.7) !important;
+}
+
+.menu a:hover ~ #circle{
+  height: 100px;
+  width: 100px;
 }
 
 .hamburger2 {
@@ -425,7 +420,8 @@ footer{
 
 
 .carousel {
-	width: 70%;
+  height: 65vh;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -468,7 +464,7 @@ footer{
   /* background-color: red; */
   border-radius: 50%;
   animation: circle 4s ease-in infinite;
-  border: 5px solid red;
+  border: 5px solid grey;
   pointer-events: none; 
 }
 
@@ -505,4 +501,39 @@ footer{
   border: 2px solid #fb7400;
   top: -2px;
   left: -2px;
+}
+
+
+.text-section{
+  position: absolute;
+  margin-top: 25% !important;
+  left:5%;
+}
+
+.banner-title{
+  font-size: 2.5em;
+  line-height: 50px;
+  font-weight: 200 !important;
+  color: white;
+  letter-spacing: 0.4px;
+}
+
+.divider{
+  height: 2px;
+  width: 800px;
+  background-color: white; 
+  margin: 40px 0;
+}
+
+.banner-text{
+  color: white;
+}
+
+.founder{
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 40px;
+}
+.founder-desc{
+  font-weight: 200;
 }
