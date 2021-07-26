@@ -53,15 +53,14 @@ section#desc {
 /* card gallery */
 
 .card-gallery {
-  width: 70%;
+  width: 100%;
   height: 65vh;
   /* background-color: orange; */
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  /* margin: 0 auto; */
+  /* display: flex;
+  justify-content: space-evenly; */
+  /* align-items: center; */
   font-family: "Montserrat", sans-serif;
-  overflow-x: auto;
 }
 
 .card-gallery::-webkit-scrollbar {
@@ -71,7 +70,7 @@ section#desc {
 .card-gallery .card {
   position: relative;
   height: 65vh;
-  min-width: 30%;
+  max-width: 30%;
   background-color: pink;
   padding: 40px;
   color: white;
@@ -177,21 +176,23 @@ header {
 /* company gallery grid  */
 
 .company-gallery {
-  width: 70%;
+  width: 100%;
   padding: 0 0 10vh 0;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
+  justify-content: center;
 }
 
 .company-gallery .item img {
-  width: 50%;
+  width: 60%;
 }
 
 .company-gallery .item {
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 /* hamburger */
 
@@ -424,4 +425,40 @@ footer{
   /* position: relative; */
   padding-top: 30px;
   padding-bottom: 20px;
+}
+
+
+.carousel {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
+  /* counter-increment: carousel-cell; */
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell); */
+  /* line-height: 200px; */
+  /* font-size: 80px; */
+  color: white;
+}
+
+.carousel-cell2 {
+  width: 30%;
+  margin-right: 10px;
+  border-radius: 5px;
+  /* counter-increment: carousel-cell; */
+}
+
+/* cell number */
+.carousel-cell2:before {
+  display: block;
+  text-align: center;
 }
