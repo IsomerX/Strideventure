@@ -245,7 +245,7 @@ webpackJsonp(
                   for (
                     var t = this.$counter.get(0).getBoundingClientRect(),
                       e = Object(o.a)(window).scrollTop(),
-                      n = t.top + 0.25 * t.height,
+                      n = t.top + 0.3 * t.height,
                       i = this.offsets,
                       s = 0,
                       a = 1;

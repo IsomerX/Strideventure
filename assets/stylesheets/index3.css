@@ -19,15 +19,16 @@ section#banner-t{
     position: absolute;
     z-index: 999 !important;
     top: 0;
-    right: 0;
+    right: -100%;
     display: flex;
     transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-    display: none;
+    /* display: none; */
 }
 
 .show-menu{
     transition: .5s all linear;
     display: flex !important;
+    right:0 !important;
 }
 
 #ext-menu a{
@@ -41,14 +42,40 @@ section#banner-t{
 #ext-menu div{
     padding: 5vh;
     height: 150px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    /* background-color: pink; */
+}
+#ext-menu div:nth-child(2n){
+    background-color: pink;
+}
+
+#ext-menu div::before{
+    content: '';
+    left: 0;
+    margin-top: 100%;
+    display: block;
+    position: absolute;
+    background-color: rgba(99, 61, 67, 0.3);
+    height: 150px;
+    padding: 5vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+#ext-menu div:hover + #ext-menu div::before{
+    margin-top: 0;
+    opacity: 1 !important;
 }
 
 /* add the bottom to up animation */
 
 #ext-menu div:hover > a{
-    font-size: 2.2em;
-    font-weight: 300;
-    border-bottom: 2px solid white;
+    /* font-size: 2.2em; */
+    font-weight: 600;
 }
 
 .blur{

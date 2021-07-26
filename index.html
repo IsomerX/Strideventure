@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> -->
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,19 +27,23 @@
 <body>
   <div id="circle"></div>
 	<!-- header start --> 
-	<section id="banner-t"> <span class="nav">
-        <div class="logo"><a href="/"><img src="assets/images/logo.png" class="logopic" alt="logo"></a></div>
-        <div class="menu">
-          <a href="#about">About</a><a href="#">Team</a><a href="#clients">Investments</a>
-        </div>
-        <div class="hamburger2">
-          <div class="hamburger" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </div>
-      </span> 
+
+  <span class="nav">
+    <div class="logo"><a href="/"><img src="assets/images/logo.png" class="logopic" alt="logo"></a></div>
+    <div class="menu">
+      <a href="#about">About</a><a href="#advantages-section">Team</a><a href="#clients">Investments</a>
+    </div>
+    <div class="hamburger2">
+      <div class="hamburger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </span> 
+	<section id="banner-t" class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 3000, "pageDots":false, 
+"pauseAutoPlayOnHover": false, "prevNextButtons": false, "selectedAttraction": 0.02, "friction":0.4 }'> 
+    <div id="slide1" class="carousel-cell3">
       <div class="text-section" data-aos="fade-right" data-aos-offset="300"
       data-aos-easing="ease-in-sine">
         <span class="banner-title">
@@ -53,11 +57,27 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="slide2" class="carousel-cell3">
+      <div class="text-section" data-aos="fade-right" data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+        <span class="banner-title">
+          Lorem ipsum dolor sit amet <br> Beatae quas suscipit tenetur.
+        </span>
+        <div class="divider"></div>
+        <div class="banner-text">
+          <div class="founder">Lorem Ipsum</div>
+          <div class="founder-desc">
+            Co-founder & Ceo, Homelane
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-	<div class="alpha"> </div>
 
   <div id="ext-menu">
 		<div><a href="">LP Login</a></div>
+
 		<div><a href="">News / Media / Noteworthy</a></div>
 		<div><a href="">Podcast : Stride Stories</a></div>
 		<div><a href="">Connect</a></div>
@@ -75,7 +95,10 @@
 	<div id="counters" data-aos-id="super-duper" data-aos="fade-up">
 		<h1 class="counter-heading">Our Experience in Numbers</h1> <span class="counter-grid">
       <div class="unit">
+        <div class="plus-counter">
         <div class="counter" id="plus" data-TargetNum="800" data-Speed="2500">0</div>
+        <div class="counter-label">+</div>
+        </div>
         <br>
         <p>Companies<br>Screened</p>
       </div>
@@ -90,7 +113,10 @@
         <p>Investments<br>Made</p>
       </div>
       <div class="unit">
+        <div class="plus-counter">
         <div class="counter" id="cr" data-TargetNum="7000" data-Speed="2500">7000</div>
+        <div class="counter-label">cr</div>
+      </div>
         <br>
         <p>Total Funds Raised<br>by these companies</p>
       </div>
@@ -98,8 +124,8 @@
 	<section data-scroll-section class="ui-light-background background-container section-no-overflow" id="advantages-section" data-plugin="scrollCounter">
 		
 		<picture class="is-invisible--js background" data-parallax-enabled-touch="false" data-parallax-0-0='{"transform": "translateY(0vh)"}' data-parallax-100-0='{"transform": "translateY(-60vh)"}' data-plugin="appear  parallax" draggable="false" data-appear-animation-name="none">
-			<source srcset="/assets/images/px-2x1.gif" data-srcset="/assets/images/landing/advantages/background-mda6b8.jpg" media="    (min-width: 1920px) and (min-height: 600px)" />
-			<source srcset="/assets/images/px-2x1.gif" data-srcset="/assets/images/landing/advantages/background-mda6b8.jpg" media="    (min-width: 980px)" /> <img data-src=" assets/images/landing/advantages/background-mda6b8.jpg" src=" assets/images/px3f99.gif" alt="" class="is-hidden--no-js" draggable="false" /> </picture>
+			<source srcset="/assets/images/px-2x1.gif" data-srcset="/assets/images/landing/long banner.jpg" media="    (min-width: 1920px) and (min-height: 600px)" />
+			<source srcset="/assets/images/px-2x1.gif" data-srcset="/assets/images/landing/long banner.jpg" media="    (min-width: 980px)" /> <img data-src="assets/images/landing/long banner.jpg" src=" assets/images/px3f99.gif" alt="" class="is-hidden--no-js" draggable="false" /> </picture>
 		<!-- <div class="container-v is-hidden--sm-down">
         <div class="ui-dark">
           <h2
@@ -121,12 +147,12 @@
                 ui-red ui-red-background
                 js-scroll-counter js-advantages-counter
               " data-plugin="counterParallax">
-						<ol class="animation--scroll-counter--inactive" data-appear-animation="scroll-counter">
-							<li data-target="#advantages-heading-1"><b>1</b></li>
-							<li data-target="#advantages-heading-2"><b>2</b></li>
-							<li data-target="#advantages-heading-3"><b>3</b></li>
-							<li data-target="#advantages-heading-4"><b>4</b></li>
-							<li data-target="#advantages-heading-5"><b>5</b></li>
+						<ol class="animation--scroll-counter--active" data-appear-animation="scroll-counter" > 
+							<li data-target="#advantages-heading-1"><b style="font-weight: 100 !important;">1</b></li>
+							<li data-target="#advantages-heading-2"><b style="font-weight: 100 !important;">2</b></li>
+							<li data-target="#advantages-heading-3"><b style="font-weight: 100 !important;">3</b></li>
+							<li data-target="#advantages-heading-4"><b style="font-weight: 100 !important;">4</b></li>
+							<li data-target="#advantages-heading-5"><b style="font-weight: 100 !important;">5</b></li>
 						</ol>
 						<p>What we look for</p>
 					</div>
@@ -143,217 +169,52 @@
               </h3>
 						<div class="accordion__heading btn-container is-active" aria-expanded="true" aria-controls="advantages-content-1" id="advantages-heading-1" role="button">
 							<div class="row"> <span class="
-                      col col--xs-3 col--sm-7 col--md-6 col--lg-3 col--xxxl-2
+                      col col--xs-8 col--sm-8 col--md-8 col--lg-8 col--xxxl-8
                       accordion__title
                     ">
                     Strong Team & Market Opportunities
                   </span>
-								<div class="
-                      col col--xs-1 col--sm-1 col--md-2 col--xl-1 col--xxxl-2
-                      text--right
-                      col--last-lg
-                      accordion__icon
-                    "> <span class="btn btn--square btn--secondary btn--medium">
-                      <span
-                        class="btn__content is-invisible--accordion-collapsed"
-                      >
-                        <svg
-                          class="icon icon-plus"
-                          width="60"
-                          height="60"
-                          aria-hidden="true"
-                        >
-                          <use
-                            href="https://accent.ru/assets/images/icons.svg?v=1622567909#plus"
-                            xlink:href="https://accent.ru/assets/images/icons.svg?v=1622567909#plus"
-                          ></use>
-                        </svg>
-                      </span> <span class="btn__content is-invisible--accordion-expanded">
-                        <svg
-                          class="icon icon-minus"
-                          width="13"
-                          height="13"
-                          aria-hidden="true"
-                        >
-                          <use
-                            href="https://accent.ru/assets/images/icons.svg?v=1622567909#minus"
-                            xlink:href="https://accent.ru/assets/images/icons.svg?v=1622567909#minus"
-                          ></use>
-                        </svg>
-                      </span> </span>
-								</div>
+								
 							</div>
 						</div>
 						<div class="accordion__heading btn-container" aria-expanded="false" aria-controls="advantages-content-2" id="advantages-heading-2" role="button">
 							<div class="row"> <span class="
-                      col col--xs-3 col--sm-7 col--md-6 col--lg-3 col--xxxl-2
+                col col--xs-8 col--sm-8 col--md-8 col--lg-8 col--xxxl-8
                       accordion__title
                     ">
                     Backed by Prominent VCs
                   </span>
-								<div class="
-                      col col--xs-1 col--sm-1 col--md-2 col--xl-1 col--xxxl-2
-                      text--right
-                      col--last-lg
-                      accordion__icon
-                    "> <span class="btn btn--square btn--secondary btn--medium">
-                      <span
-                        class="btn__content is-invisible--accordion-collapsed"
-                      >
-                        <svg
-                          class="icon icon-plus"
-                          width="60"
-                          height="60"
-                          aria-hidden="true"
-                        >
-                          <use
-                            href="https://accent.ru/assets/images/icons.svg?v=1622567909#plus"
-                            xlink:href="https://accent.ru/assets/images/icons.svg?v=1622567909#plus"
-                          ></use>
-                        </svg>
-                      </span> <span class="btn__content is-invisible--accordion-expanded">
-                        <svg
-                          class="icon icon-minus"
-                          width="13"
-                          height="13"
-                          aria-hidden="true"
-                        >
-                          <use
-                            href="https://accent.ru/assets/images/icons.svg?v=1622567909#minus"
-                            xlink:href="https://accent.ru/assets/images/icons.svg?v=1622567909#minus"
-                          ></use>
-                        </svg>
-                      </span> </span>
-								</div>
+								
 							</div>
 						</div>
 						<div class="accordion__heading btn-container" aria-expanded="false" aria-controls="advantages-content-3" id="advantages-heading-3" role="button">
 							<div class="row"> <span class="
-                      col col--xs-3 col--sm-7 col--md-6 col--lg-3 col--xxxl-2
+                      col col--xs-8 col--sm-8 col--md-8 col--lg-8 col--xxxl-8
                       accordion__title
                     ">
 
 Healthy Gross Margins
                   </span>
-								<div class="
-                      col col--xs-1 col--sm-1 col--md-2 col--xl-1 col--xxxl-2
-                      text--right
-                      col--last-lg
-                      accordion__icon
-                    "> <span class="btn btn--square btn--secondary btn--medium">
-                      <span
-                        class="btn__content is-invisible--accordion-collapsed"
-                      >
-                        <svg
-                          class="icon icon-plus"
-                          width="60"
-                          height="60"
-                          aria-hidden="true"
-                        >
-                          <use
-                            href="https://accent.ru/assets/images/icons.svg?v=1622567909#plus"
-                            xlink:href="https://accent.ru/assets/images/icons.svg?v=1622567909#plus"
-                          ></use>
-                        </svg>
-                      </span> <span class="btn__content is-invisible--accordion-expanded">
-                        <svg
-                          class="icon icon-minus"
-                          width="13"
-                          height="13"
-                          aria-hidden="true"
-                        >
-                          <use
-                            href="https://accent.ru/assets/images/icons.svg?v=1622567909#minus"
-                            xlink:href="https://accent.ru/assets/images/icons.svg?v=1622567909#minus"
-                          ></use>
-                        </svg>
-                      </span> </span>
-								</div>
+								
 							</div>
 						</div>
 						<div class="accordion__heading btn-container" aria-expanded="false" aria-controls="advantages-content-4" id="advantages-heading-4" role="button">
 							<div class="row"> <span class="
-                      col col--xs-3 col--sm-7 col--md-6 col--lg-3 col--xxxl-2
+                col col--xs-8 col--sm-8 col--md-8 col--lg-8 col--xxxl-8
                       accordion__title
                     ">
 
 Strong Operating Cash Flows
                   </span>
-								<div class="
-                      col col--xs-1 col--sm-1 col--md-2 col--xl-1 col--xxxl-2
-                      text--right
-                      col--last-lg
-                      accordion__icon
-                    "> <span class="btn btn--square btn--secondary btn--medium">
-                      <span
-                        class="btn__content is-invisible--accordion-collapsed"
-                      >
-                        <svg
-                          class="icon icon-plus"
-                          width="60"
-                          height="60"
-                          aria-hidden="true"
-                        >
-                          <use
-                            href="https://accent.ru/assets/images/icons.svg?v=1622567909#plus"
-                            xlink:href="https://accent.ru/assets/images/icons.svg?v=1622567909#plus"
-                          ></use>
-                        </svg>
-                      </span> <span class="btn__content is-invisible--accordion-expanded">
-                        <svg
-                          class="icon icon-minus"
-                          width="13"
-                          height="13"
-                          aria-hidden="true"
-                        >
-                          <use
-                            href="https://accent.ru/assets/images/icons.svg?v=1622567909#minus"
-                            xlink:href="https://accent.ru/assets/images/icons.svg?v=1622567909#minus"
-                          ></use>
-                        </svg>
-                      </span> </span>
-								</div>
+								
 							</div>
 						</div>
 						<div class="accordion__heading btn-container" aria-expanded="false" aria-controls="advantages-content-5" id="advantages-heading-5" role="button">
 							<div class="row"> <span class="
-                      col col--xs-3 col--sm-7 col--md-6 col--lg-3 col--xxxl-2
+                col col--xs-8 col--sm-8 col--md-8 col--lg-8 col--xxxl-8
                       accordion__title
                     ">
                     Clear Path to Profitability                  </span>
-								<div class="
-                      col col--xs-1 col--sm-1 col--md-2 col--xl-1 col--xxxl-2
-                      text--right
-                      col--last-lg
-                      accordion__icon
-                    "> <span class="btn btn--square btn--secondary btn--medium">
-                      <span
-                        class="btn__content is-invisible--accordion-collapsed"
-                      >
-                        <svg
-                          class="icon icon-plus"
-                          width="60"
-                          height="60"
-                          aria-hidden="true"
-                        >
-                          <use
-                            href="https://accent.ru/assets/images/icons.svg?v=1622567909#plus"
-                            xlink:href="https://accent.ru/assets/images/icons.svg?v=1622567909#plus"
-                          ></use>
-                        </svg>
-                      </span> <span class="btn__content is-invisible--accordion-expanded">
-                        <svg
-                          class="icon icon-minus"
-                          width="13"
-                          height="13"
-                          aria-hidden="true"
-                        >
-                          <use
-                            href="https://accent.ru/assets/images/icons.svg?v=1622567909#minus"
-                            xlink:href="https://accent.ru/assets/images/icons.svg?v=1622567909#minus"
-                          ></use>
-                        </svg>
-                      </span> </span>
 								</div>
 								
 							</div>
@@ -419,8 +280,32 @@ Strong Operating Cash Flows
 			<div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
 			<div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
 		</div> -->
-    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+    <div class="carousel2" data-flickity='{ "wrapAround": true }'>
       <div class="carousel-cell">
+        <div class="company-gallery">
+          <div class="item"><img src="assets/images/Companies/0.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/1.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/companies/2.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/3.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/4.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/5.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/6.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/7.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="company-gallery">
+          <div class="item"><img src="assets/images/Companies/0.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/1.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/companies/2.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/3.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/4.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/5.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/6.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/Companies/7.jpg" alt=""></div>
+        </div>
+      </div>
+      <!-- <div class="carousel-cell">
         <div class="company-gallery">
           <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
           <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
@@ -443,44 +328,32 @@ Strong Operating Cash Flows
           <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
           <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
         </div>
-      </div>
-      <div class="carousel-cell">
-        <div class="company-gallery">
-          <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
-          <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
-          <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
-          <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
-          <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
-          <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
-          <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
-          <div class="item"><img src=" assets/images/Companies/sugar.png" alt=""></div>
-        </div>
-      </div>
+      </div> -->
     </div>
 	</section>
 	<section id="news">
 		<div class="news-gallery">
-			<h1 class="news-title">News</h1>
+			<h1 class="news-titles">News</h1>
 			<div class="news-item"> <img src=" assets/images/news/news1.jpg" alt="">
-				<a href="https://www.livemint.com/companies/news/stride-ventures-launches-second-debt-fund-targets-rs-1-000-crore-corpus-11621921619269.html">
+				<a href="https://www.livemint.com/companies/news/stride-ventures-launches-second-debt-fund-targets-rs-1-000-crore-corpus-11621921619269.html" target="_blank">
 					<div class="news-title">Stride Ventures launches debt fund, targets Rs. 1000 crore corpus</div>
 				</a>
 				<div class="news-subtitle">Press - 25 May 2021</div>
 			</div>
 			<div class="news-item"> <img src=" assets/images/news/new2.jpg" alt="">
-				<a href="https://www.cnbctv18.com/startup/detect-technologies-raises-12-mn-from-accel-elevation-capital-others-9822341.htm">
+				<a href="https://www.cnbctv18.com/startup/detect-technologies-raises-12-mn-from-accel-elevation-capital-others-9822341.htm" target="_blank">
 					<div class="news-title">Detect Technologies raises $12 mn from Accel, Elevation Capital, others</div>
 				</a>
 				<div class="news-subtitle">Press - Jun 30, 2021</div>
 			</div>
 			<div class="news-item"> <img src=" assets/images/news/new3.jpg" alt="">
-				<a href="https://yourstory.com/2021/06/funding-alert-digital-healthcare-startup-medibuddy-debt-stride-ventures/amp">
+				<a href="https://yourstory.com/2021/06/funding-alert-digital-healthcare-startup-medibuddy-debt-stride-ventures/amp" target="_blank">
 					<div class="news-title">Digital healthcare startup MediBuddy raises Rs 25 Cr in debt from Stride Ventures </div>
 				</a>
 				<div class="news-subtitle">Press - June 8, 2021</div>
 			</div>
 			<div class="news-item"> <img src=" assets/images/news/news4.png" alt="">
-				<a href="https://yourstory.com/2021/07/venture-debt-firm-stride-ventures-financial-institution-startups/amp">
+				<a href="https://yourstory.com/2021/07/venture-debt-firm-stride-ventures-financial-institution-startups/amp" target="_blank">
 					<div class="news-title">How venture debt firm Stride Ventures wants to be the go-to financial institution for startups </div>
 				</a>
 				<div class="news-subtitle">Press - July 12, 2021</div>
@@ -547,11 +420,15 @@ Strong Operating Cash Flows
 
     document.addEventListener('click', () => {
         cursor.classList.add("expand");
-
         setTimeout(() => {
             cursor.classList.remove("expand");
         }, 500)
     });
+
+    document.getElementsByClassName("hamburger").addEventListener('click',()=>{
+      alert("asd")  
+      document.getElementsByClassName("bar1").classList.toggle("blue");
+    })
 
 		function myFunction(x) {
 			x.classList.toggle("change");
@@ -559,6 +436,27 @@ Strong Operating Cash Flows
 
 			document.querySelector(".alpha").classList.toggle("blur")
 		}
+
+    
+    var carousel = document.querySelector('.main-carousel');
+    var flkty = new Flickity( carousel, {
+      imagesLoaded: true,
+      percentPosition: false,
+    });
+
+    var imgs = carousel.querySelectorAll('.carousel-cell3 img');
+    // get transform property
+    var docStyle = document.documentElement.style;
+    var transformProp = typeof docStyle.transform == 'string' ?
+      'transform' : 'WebkitTransform';
+
+    flkty.on( 'scroll', function() {
+      flkty.slides.forEach( function( slide, i ) {
+        var img = imgs[i];
+        var x = ( slide.target + flkty.x ) * -1/3;
+        img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+      });
+    });
 	</script>
 </body>
 

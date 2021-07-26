@@ -10,13 +10,13 @@ body {
 }
 
 section#desc {
-  height: 120vh;
+  padding-bottom: 10vh;
   width: 100%;
   background-color: #f1f1f1;
 }
 
 .interest {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -55,7 +55,7 @@ section#desc {
 
 .card-gallery {
   width: 80%;
-  height: 65vh;
+  height: 400px;
   /* background-color: orange; */
   /* margin: 0 auto; */
   /* display: flex; */
@@ -132,10 +132,11 @@ header {
 .bar3 {
   width: 30px;
   height: 2px;
-  background-color: #333;
+  background-color: white;
   margin: 8px 0;
   transition: 0.4s;
 }
+
 .bar1{
   transform-origin: left top;
 }
@@ -188,13 +189,14 @@ header {
 
 section#news {
   width: 100%;
+  margin-top: 6vh;
   background-color: #f1f1f1;
   padding-top: 5vh;
   padding-bottom: 10vh;
 }
 
-#news h1.news-title {
-  font-size: 1.6em;
+#news .news-title {
+  font-size: 1em;
   color: #052073;
   font-weight: 500;
   padding: 5vh 0;
@@ -202,13 +204,14 @@ section#news {
 }
 
 .news-gallery {
-  width: 70%;
+  width: 80%;
   padding-top: 5vh;
+  padding: 5vh 15vh;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
-  row-gap: 110px;
+  row-gap: 50px;
   justify-content: center;
   /* align-items: center; */
 }
@@ -235,16 +238,28 @@ section#news {
 
 .news-item .news-title {
   font-size: 1.2em;
+  padding: 100px 0 0 0;
+  margin-top: 20px;
+  font-weight: 200;
+  color: #052073;
+  line-height: 30px;
+  transition: 0.2s all linear !important;
+}
+
+h1.news-titles {
+  font-size: 1.5em;
   padding: 30px 0;
   font-weight: 400;
   color: #052073;
-  line-height: 40px;
+  line-height: 0px;
   transition: 0.2s all linear !important;
+  
 }
 
 .news-item .news-subtitle {
   color: #646464;
-  font-weight: 500;
+  font-weight: 300;
+  line-height: 50px;
   transition: 0.2s all linear;
 }
 
@@ -281,6 +296,7 @@ span.nav {
   width: 100%;
   display: flex;
   position: absolute;
+  z-index: 123123213123;
 }
 
 .logo {
@@ -336,8 +352,8 @@ span.nav {
 }
 
 #counters{
-  height: 43vh;
-  width: 70%;
+  height: 40vh;
+  width: calc(80% - 30vh);
   background-color: #012063;
   position: relative;
   top: 100%;
@@ -375,9 +391,13 @@ span.nav {
   align-items: center;
 }
 
-.counter{
+.counter, .counter-label{
   font-size: 3em;
   font-weight: 300;
+}
+
+.plus-counter{
+  display: flex;
 }
 
 .unit p{
@@ -420,7 +440,12 @@ footer{
 
 
 .carousel {
-  height: 65vh;
+  height: 400px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.carousel2 {
 	width: 80%;
 	margin: 0 auto;
 }
@@ -464,23 +489,8 @@ footer{
   /* background-color: red; */
   border-radius: 50%;
   animation: circle 4s ease-in infinite;
-  border: 5px solid grey;
+  border: 2px solid grey;
   pointer-events: none; 
-}
-
-@keyframes circle {
-  0% {
-    border-color: red;
-  }
-  25%{
-    border-color: blue;
-  }
-  50%{
-    border-color: orange;
-  }
-  100%{
-    border-color: red;
-  }
 }
 
 @keyframes cursorAnim3 {
@@ -536,4 +546,21 @@ footer{
 }
 .founder-desc{
   font-weight: 200;
+}
+
+.carousel-cell3 {
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel-cell3:nth-child(1) {
+  background-image: url("../images/landing/bg-banner1.jpg") !important;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-cell3:nth-child(2) {
+  background-image: url("../images/landing/beta.jpeg") !important;
+  background-position: center;
+  background-size: cover;
 }
