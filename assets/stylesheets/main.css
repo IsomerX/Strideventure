@@ -26,7 +26,7 @@ section#desc {
 
 .desc-title {
   width: 35%;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.7em;
   line-height: 1.3em;
   letter-spacing: 0.5px;
@@ -53,7 +53,7 @@ section#desc {
 /* card gallery */
 
 .card-gallery {
-  width: 100%;
+  width: 80%;
   height: 65vh;
   /* background-color: orange; */
   /* margin: 0 auto; */
@@ -63,14 +63,11 @@ section#desc {
   font-family: "Montserrat", sans-serif;
 }
 
-.card-gallery::-webkit-scrollbar {
-  display: none;
-}
 
 .card-gallery .card {
   position: relative;
   height: 65vh;
-  max-width: 30%;
+  width: 30%;
   background-color: pink;
   padding: 40px;
   color: white;
@@ -176,8 +173,7 @@ header {
 /* company gallery grid  */
 
 .company-gallery {
-  width: 100%;
-  padding: 0 0 10vh 0;
+  width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -451,7 +447,6 @@ footer{
 }
 
 .carousel-cell2 {
-  width: 30%;
   margin-right: 10px;
   border-radius: 5px;
   /* counter-increment: carousel-cell; */
@@ -461,4 +456,52 @@ footer{
 .carousel-cell2:before {
   display: block;
   text-align: center;
+}
+
+#circle{
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  left: 0;
+  top:0;
+  z-index: 1000000000;
+  /* background-color: red; */
+  border-radius: 50%;
+  animation: circle 4s ease-in infinite;
+  border: 5px solid red;
+}
+
+@keyframes circle {
+  0% {
+    border-color: red;
+  }
+  25%{
+    border-color: blue;
+  }
+  50%{
+    border-color: orange;
+  }
+  100%{
+    border-color: red;
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(2.5);
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 .5s forwards;
+  border: 2px solid #fb7400;
+  top: -2px;
+  left: -2px;
 }

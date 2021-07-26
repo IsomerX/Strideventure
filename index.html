@@ -25,6 +25,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> </head>
 
 <body>
+  <div id="circle"></div>
 	<!-- header start --> 
 	<section id="banner-t"> <span class="nav">
         <div class="logo"><a href="/"><img src="assets/images/logo.png" class="logopic" alt="logo"></a></div>
@@ -51,7 +52,7 @@
       
 	<section id="about">
 		<div class="interest"> <span class="desc-title">
-        About Us
+        About
       </span> <span class="desc-description">
         <span style="font-weight:400; color: #172869; letter-spacing: 0.1px; font-size: 1.2em;">Stride Ventures provides comprehensive credit solutions to new-age businesses in India.</span>
 			<br>
@@ -511,6 +512,7 @@
 	<script src=" assets/javascripts/landing3f99.js?v=1622567909"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	<script>
 	AOS.init({
 		once: false
@@ -519,6 +521,36 @@
 	<script src=" assets/javascripts/counter.js">
 	</script>
   <script>
+    
+    const cursor = document.getElementById('circle');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.cssText = `
+        left: ${e.clientX - cursor.offsetHeight/2}px;
+        top:  ${e.clientY - cursor.offsetHeight/2}px;
+      `;
+    });
+
+    function incHeight() {
+        // var el = document.getElementById("circle");
+        // var height = el.offsetHeight;
+        // var newHeight = height + 200;
+        // el.style.height = newHeight + 'px';
+        // el.style.width = newHeight + 'px';
+
+        getElementById('circle').setAttribute("style","height:500px");
+    }
+    setInterval(incHeight, 3000); 
+
+    document.addEventListener('click', () => {
+        cursor.classList.add("expand");
+
+        setTimeout(() => {
+            cursor.classList.remove("expand");
+        }, 500)
+    });
+
+
 
 		function myFunction(x) {
 			x.classList.toggle("change");
