@@ -24,6 +24,7 @@ section#banner-t{
     display: flex;
     transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
     /* display: none; */
+    padding-top: 130px;
 
     -webkit-box-shadow: -10px 0px 16px 3px rgba(0,0,0,0.75);
 -moz-box-shadow: -10px 0px 16px 3px rgba(0,0,0,0.75);
