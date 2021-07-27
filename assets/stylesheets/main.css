@@ -46,14 +46,6 @@ section#desc {
   border-top: 1px solid rgba(0,0,0,0.1);
 }
 
-.alpha {
-  
-  height: 973px;
-  width: 100%;
-  background-image: url("../images/landing/bg-banner1.jpg") !important;
-  background-position: center;
-  background-size: cover;
-}
 
 /* card gallery */
 
@@ -147,6 +139,15 @@ header {
 .bar3{ 
   transform-origin: left bottom;
 }
+
+.change > .bar1 {
+  background-color: #001f62;
+}
+
+.change > .bar3 {
+  background-color: #001f62;
+}
+
 .change .bar1 {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -487,15 +488,20 @@ footer{
 #circle{
   height: 50px;
   width: 50px;
-  position: fixed;
+  position: absolute;
   left: 0;
   top:0;
   z-index: 1000000000;
   /* background-color: red; */
   border-radius: 50%;
-  animation: circle 4s ease-in infinite;
   border: 2px solid grey;
   pointer-events: none; 
+}
+
+
+.dilate{
+  height: 100px !important;
+  width: 100px !important;
 }
 
 @keyframes cursorAnim3 {
@@ -503,10 +509,11 @@ footer{
       transform: scale(1);
   }
   50% {
-      transform: scale(2.5);
+      transform: scale(3);
+      border: 1px solid grey;
   }
   100% {
-      transform: scale(1);
+      transform: scale(2.5);
       opacity: 0;
   }
 }
@@ -523,6 +530,7 @@ footer{
   position: absolute;
   margin-top: 25% !important;
   left:5%;
+  z-index: 100;
 }
 
 .banner-title{
@@ -559,15 +567,40 @@ footer{
 }
 
 .carousel-cell3:nth-child(1) {
+  /* background-image: url("../images/landing/bg-banner1.jpg") !important;
+  background-position: center;
+  background-size: cover; */
+}
+.img-banner1{
+  width: 100%;
+  height: 100vh;
   background-image: url("../images/landing/bg-banner1.jpg") !important;
   background-position: center;
   background-size: cover;
+  position: relative;
+  z-index: -1;
+  animation: zoom 3s all linear infinite;
 }
 
-.carousel-cell3:nth-child(2) {
+@keyframes zoom {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.5);}
+}
+
+.img-banner2{
+  width: 100%;
+  height: 100vh;
   background-image: url("../images/landing/beta.jpeg") !important;
   background-position: center;
   background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.carousel-cell3:nth-child(2) {
+  /* background-image: url("../images/landing/beta.jpeg") !important;
+  background-position: center;
+  background-size: cover; */
 }
 
 .dots{
@@ -592,3 +625,8 @@ footer{
   height: 100px;
   width: 100%;
 } */
+
+
+.row:hover ~ #circle{
+  background-color: pink !important;
+}

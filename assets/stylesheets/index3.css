@@ -14,15 +14,20 @@ section#banner-t{
     background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
+    align-items: space-between;
+    justify-content: space-evenly;
     position: absolute;
     z-index: 63546999 !important;
     top: 0;
+    border-radius: 20px 0 0 20px;
     right: -100%;
     display: flex;
     transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
     /* display: none; */
+
+    -webkit-box-shadow: -10px 0px 16px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: -10px 0px 16px 3px rgba(0,0,0,0.75);
+box-shadow: -10px 0px 16px 3px rgba(0,0,0,0.75);
 }
 
 .show-menu{
@@ -49,6 +54,10 @@ section#banner-t{
     align-items: center;
     transition: 0.5s all linear;
     /* background-color: pink; */
+}
+
+#ext-menu div:last-child{
+    border-bottom: none;
 }
 
 /* add the bottom to up animation */

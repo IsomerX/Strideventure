@@ -42,6 +42,7 @@
         <section id="banner-t" class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 3000, "pageDots":false, 
             "pauseAutoPlayOnHover": false, "prevNextButtons": false, "selectedAttraction": 0.02, "friction":0.4 }'>
             <div id="slide1" class="carousel-cell3">
+              
                 <div class="text-section" data-aos="fade-right" data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                     <span class="banner-title">
@@ -55,6 +56,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="img-banner1"></div>
             </div>
             <div id="slide2" class="carousel-cell3">
                 <div class="text-section" data-aos="fade-right" data-aos-offset="300"
@@ -70,6 +72,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="img-banner2"></div>
             </div>
         </section>
         <div id="ext-menu">
@@ -367,13 +370,41 @@
         <script>
             const cursor = document.getElementById('circle');
             
-            document.addEventListener('mousemove', (e) => {
-              cursor.style.cssText = `
-                left: ${e.clientX - cursor.offsetHeight/2}px;
-                top:  ${e.clientY - cursor.offsetHeight/2}px;
-              `;
-            });
-            
+            // document.addEventListener('mousemove', (e) => {
+            //   cursor.style.cssText = `
+            //     left: ${e.clientX - cursor.offsetHeight/2}px;
+            //     top:  ${e.clientY - cursor.offsetHeight/2}px;
+            //   `;
+            // });
+
+
+            document.addEventListener('DOMContentLoaded', () => {
+            let mousePosX = 0,
+                mousePosY = 0,
+                mouseCircle = document.getElementById('circle');
+
+            document.onmousemove = (e) => {
+                mousePosX = e.pageX - cursor.offsetHeight/2;
+                mousePosY = e.pageY - cursor.offsetHeight/2;
+            }
+
+            let delay = 6,
+                revisedMousePosX = 0,
+                revisedMousePosY = 0;
+
+            function delayMouseFollow() {
+                requestAnimationFrame(delayMouseFollow);
+
+                revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
+                revisedMousePosY += (mousePosY - revisedMousePosY) / delay; 
+
+                mouseCircle.style.top = revisedMousePosY + 'px';
+                mouseCircle.style.left = revisedMousePosX + 'px';
+            }
+            delayMouseFollow();
+        });
+
+        
             function incHeight() {
                 // var el = document.getElementById("circle");
                 // var height = el.offsetHeight;
@@ -424,6 +455,20 @@
                 img.style[ transformProp ] = 'translateX(' + x  + 'px)';
               });
             });
+
+
+            document.querySelector('a').addEventListener( 'mouseover', function( event ) {
+              document.getElementById('circle').style.height = 100 + 'px';
+            })
+            // document.querySelector("a").addEventListener("mouseover", function(event){
+            //     alert("this")
+            //     document.querySelector("#circle").classList.add("dilate");
+            // })
+
+            // document.querySelector("a").addEventListener("mouseleave", function(event){
+            //     document.querySelector(".change-on-hover").classList.remove("someClass");
+            // }
+
         </script>
     </body>
 </html>
