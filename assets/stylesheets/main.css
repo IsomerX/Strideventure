@@ -179,6 +179,7 @@ header {
 
 .company-gallery .item img {
   width: 60%;
+  height: auto;
 }
 
 .company-gallery .item {
@@ -458,6 +459,7 @@ footer{
 
 .carousel2 {
 	width: 80%;
+  height: 300px;
 	margin: 0 auto;
 }
 
