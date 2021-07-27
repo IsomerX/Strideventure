@@ -940,7 +940,7 @@
   }
 }
 .landing-intro__popup.is-active .background img {
-  transform: scale(1.05);
+  transform: scale(1);
 }
 @media only screen and (min-width: 980px) {
   .landing-intro__popup h2 {

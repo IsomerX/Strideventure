@@ -60,20 +60,21 @@ section#banner-t{
 #ext-menu div::before{
     content: '';
     background-color: rgba(0,0,0,0.1);
-    height: 150px;
+    height: 0px;
     padding: 5vh;
     border: 1px;
     width: 100%;
     position: absolute;
     left: 0;
     z-index: -1;
-    margin-top: calc(150px + 10vh);
-    transition: .5s all cubic-bezier(0.68, 0.04, 0.52, 0.95);
+    /* margin-top: calc(150px + 10vh); */
+    transition: .3s all cubic-bezier(0.68, 0.04, 0.52, 0.95);
     opacity: 0;
 }
 
 #ext-menu div:hover::before{
-    margin-top: 0vh;
+    /* margin-top: 0vh; */
+    height: 150px;
     opacity: 1;
 }
 
