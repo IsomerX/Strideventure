@@ -38,10 +38,12 @@
                 </div>
             </div>
         </span>
-        <section id="banner-t" class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 3000, "pageDots":false, 
+        <section id="banner-t" class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 5000, "pageDots":false, 
             "pauseAutoPlayOnHover": false, "prevNextButtons": false, "selectedAttraction": 0.02, "friction":0.4 }'>
             <div id="slide1" class="carousel-cell3">
-              
+                <video autoplay muted loop>
+                    <source src="./assets/bg-banner1.mp4" type="video/mp4" />
+                </video>
                 <div class="text-section" data-aos="fade-right" data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                     <span class="banner-title">
@@ -55,9 +57,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-banner1"></div>
+                <!-- <div class="img-banner1"></div> -->
             </div>
             <div id="slide2" class="carousel-cell3">
+                <video autoplay muted loop>
+                    <source src="./assets/beta.mp4" type="video/mp4" />
+                </video>
                 <div class="text-section" data-aos="fade-right" data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                     <span class="banner-title">
@@ -226,10 +231,10 @@
             <div class="interest"> <span class="desc-title">
                 Why Stride Ventures
                 </span> <span class="desc-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolorum
-                necessitatibus unde, quis, beatae placeat laborum sunt doloremque
-                aliquid cum vero nesciunt. Placeat recusandae accusantium quaerat. Hic
-                facilis sapiente ipsa.
+                    Industry first in introducing innovative financial solutions	
+                    Work cohesively with founders for delivering tailored credit solutions
+                    Prevents dilution of ownership of founders
+                    Strong industry expertise across financial institutions
                 </span> 
             </div>
             <div class="card-gallery carousel" data-flickity='{ "wrapAround": true, "groupCells": 3  }'>
@@ -455,6 +460,8 @@
               });
             });
 
+            var vid = document.querySelector("video");
+            vid.playbackRate = 0.1;
             // document.querySelector("a").addEventListener("mouseover", function(event){
             //     alert("this")
             //     document.querySelector("#circle").classList.add("dilate");
@@ -487,6 +494,31 @@
                 $('#circle').animate({height: '70px', width: '70px'}, 200);
             }, function() {
                 $('#circle').animate({height: '50px', width: '50px'}, 100);
+            });
+            });
+
+            var carousel = document.querySelector(".main-carousel");
+
+            flkty.on("change", function() {
+            console.log("Flickity active slide: " + flkty.selectedIndex);
+
+            flkty.cells.forEach(function(cell, i) {
+                if (cell.element == flkty.selectedElement) {
+                // play video if active slide contains one
+                // use <video playsinline ..> in your html to assure it works on ios devices
+                var video = cell.element.querySelector("video");
+                if (video) {
+                    console.log("playing video " + i);
+                }
+                return;
+                }
+
+                // pause all other videos
+                var video = cell.element.querySelector("video");
+                if (video) {
+                console.log("pausing video " + i);
+                video.pause();
+                }
             });
             });
         </script> 

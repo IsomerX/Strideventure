@@ -593,10 +593,18 @@ footer{
   100% {transform: scale(1.5);}
 }
 
+video{
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  height: 100vh;
+  width: 100%;
+}
+
 .img-banner2{
   width: 100%;
   height: 100vh;
-  background-image: url("../images/landing/beta.jpeg") !important;
+  background-image: url("../images/landing/beta.gif") !important;
   background-position: center;
   background-size: cover;
   position: relative;
