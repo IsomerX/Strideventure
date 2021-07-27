@@ -42,6 +42,7 @@ box-shadow: -10px 0px 16px 3px rgba(0,0,0,0.75);
     text-decoration: none;
     transition: 0.2s all linear;
     font-weight: 300;
+    cursor: pointer;
 }
 
 #ext-menu div{
@@ -62,10 +63,6 @@ box-shadow: -10px 0px 16px 3px rgba(0,0,0,0.75);
 
 /* add the bottom to up animation */
 
-#ext-menu div:hover > a{
-    /* font-size: 2.2em; */
-    font-weight: 600;
-}
 
 .blur{
     filter: blur(4px);

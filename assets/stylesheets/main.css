@@ -234,6 +234,11 @@ section#news {
   transform: scale(1.03);
 }
 
+.news-item:hover ~ #circle{
+  height: 100px;
+  width: 100px;
+}
+
 .news-item img {
   width: 100%;
   height: 250px;
@@ -579,7 +584,8 @@ footer{
   background-size: cover;
   position: relative;
   z-index: -1;
-  animation: zoom 3s all linear infinite;
+  transform: scale(1);
+  animation: zoom 1s all linear infinite;
 }
 
 @keyframes zoom {
@@ -607,7 +613,8 @@ footer{
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: black;
+  /* background-color: black; */
+  border: 1px solid black;
   margin-right: 10vh;
 }
 
