@@ -755,7 +755,7 @@ body {
   height: 100vh;
   width: 100%;
 }
-.hero-slider .carousel-cell {
+.hero-slider .carousel-cell-1 {
   width: 100vw;
   height: 50.5vw;
   background-repeat: no-repeat;
@@ -857,7 +857,7 @@ body {
     transform: translateX(20%);
     color: white;
     padding: 5vh;
-    font-size: 1.5em;
+    font-size: 1.1em !important;
     justify-content: center;
     -webkit-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
@@ -873,7 +873,7 @@ body {
     border: 0;
     margin: 0;
     padding: 3vh;
-    font-size: 2em;
+    font-size: 1.5em !important;
     line-height: 40px;
     color: #051a63;
     font-weight: 500;   
