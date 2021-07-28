@@ -651,3 +651,94 @@ video{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+section#banner-t{
+  z-index: 1000;
+  position: relative;
+}
+
+.alpha  {
+  position: relative;
+  z-index: -1;
+}
+
+#ext-menu{
+  height: 100vh;
+  width: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  position: absolute;
+  z-index: 63546999 !important;
+  top: 0;
+  border-radius: 20px 0 0 0;
+  right: -100%;
+  display: flex;
+  transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* display: none; */
+  padding-top: 130px;
+  -webkit-box-shadow: -10px 0px 72px -19px rgba(0,0,0,0.75);
+  -moz-box-shadow: -10px 0px 72px -19px rgba(0,0,0,0.75);
+  box-shadow: -10px 0px 72px -19px rgba(0,0,0,0.75);    
+}
+
+.show-menu{
+  transition: .5s all linear;
+  display: flex !important;
+  right:0 !important;
+}
+
+#ext-menu a{
+  color: black !important;
+  font-size: 1em;
+  text-decoration: none;
+  transition: 0.2s all linear;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+#ext-menu div{
+  padding: 5vh;
+  height: 150px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  transition: 0.5s all linear;
+  /* background-color: pink; */
+}
+
+#ext-menu div::before{
+  content: '';
+  background-color: rgba(0,0,0,0.1);
+  height: 0px;
+  padding: 5vh;
+  border: 1px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  /* margin-top: calc(150px + 10vh); */
+  transition: .3s all cubic-bezier(0.68, 0.04, 0.52, 0.95);
+  opacity: 0;
+}
+
+#ext-menu div:hover::before{
+  /* margin-top: 0vh; */
+  height: 150px;
+  opacity: 1;
+}
+
+#ext-menu div:last-child{
+  border-bottom: none;
+}
+
+/* add the bottom to up animation */
+
+
+.blur{
+  filter: blur(4px);
+}
