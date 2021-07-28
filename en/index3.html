@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
-		/* external css: flickity.css */
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-* { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
-
-.carousel {
-	width: 80%;
-	margin: 0 auto;
-}
-
-.carousel-cell {
-  width: 100%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
-
-	</style>
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="../assets/stylesheets/index3.css">
 </head>
 <body>
-	<h1>Flickity - wrapAround</h1>
+  <div class="hero-slider" data-carousel>
+    <div class="carousel-cell" style="background-image:url(../assets/images/landing/1.png);">
+      <div class="rect1 green_rect"></div>
+      <div class="rect2 yellow_rect"><p>01</p></div>
+      <div class="rect3 orange_rect">
+        <div class="text-block">Vineeta Singh & Kaushik Mukherjee <span class="desig"> SUGAR Cosmetics - Co-Founders</span></div>
+        <p class="company-text">India's fastest growing color <br> cosmetics and skincare brand <br> catering to the younger demographic</p></div>
+    </div>
+    <div class="carousel-cell" style="background-image:url(../assets/images/landing/2.png);">
+      <div class="rect1 green_rect"></div>
+      <div class="rect2 yellow_rect"><p>02</p></div>
+      <div class="rect3 orange_rect">
+        <div class="text-block">Srikanth Iyer <span class="desig">HomeLane - Founder</span></div>
+        <p class="company-text">Omni channel platform providing <br>interior design solutions with<br> a focus on quality and affordibility</p></div>
+    </div>
+    <div class="carousel-cell" style="background-image:url(../assets/images/landing/3.png);">
+      <div class="rect1 green_rect"></div>
+      <div class="rect2 yellow_rect"><p>03</p></div>
+      <div class="rect3 orange_rect">
+        <div class="text-block">Anirudh Pandita, Ashwin Suresh,<br>  Aditi Shrivastava <span class="desig"> Pocket Aces - Co-Founders</span></div>
+        <p class="company-text">India's leading digital entertainment company focus on relatable content </p></div>
+    </div>
+    <div class="carousel-cell" style="background-image:url(../assets/images/landing/4.png);">
+      <div class="rect1 green_rect"></div>
+      <div class="rect2 yellow_rect"><p>04</p></div>
+      <div class="rect3 orange_rect">
+        <div class="text-block">Gaurav Kumar and Vineet Sukumar  <span class="desig"> CredAvenue - Co-Founders </span></div>
+        <p class="company-text">India’s first digital marketplace <br> for institutional debt funding</p></div>
+    </div>
+    <div class="carousel-cell" style="background-image:url(../assets/images/landing/5.png);">
+      <div class="rect1 green_rect"></div>
+      <div class="rect2 yellow_rect"><p>05</p></div>
+      <div class="rect3 orange_rect">
+        <div class="text-block">Sachin Agrawal, Ankit Tomar, Aniket Deb <span class="desig">Bizongo - Co-Founders </span></div>
+        <p class="company-text">Leading tech enabled B2B marketplace for packaging solutions and industrial supplies</p></div>
+    </div>
 
-<!-- Flickity HTML init -->
-<div class="carousel"
-  data-flickity='{ "wrapAround": true }'>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  </div>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+<script src="../assets/javascripts/index3.js"></script>
 </body>
 </html>

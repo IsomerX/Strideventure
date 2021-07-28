@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: poppins !important;
+}
+
+.hero-slider {
+  height: 100vh;
+  width: 100%;
+}
+.hero-slider .carousel-cell {
+  width: 100vw;
+  height: 50.5vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-slider .flickity-prev-next-button {
+  width: 80px;
+  height: 80px;
+  background: transparent;
+}
+.hero-slider .flickity-prev-next-button:hover {
+  background: transparent;
+}
+.hero-slider .flickity-prev-next-button .arrow {
+  fill: white;
+}
+.hero-slider .flickity-page-dots {
+  bottom: 30px;
+}
+.hero-slider .flickity-page-dots .dot {
+  width: 30px;
+  height: 4px;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0 solid white;
+  border-radius: 0;
+}
+.hero-slider .flickity-page-dots .dot.is-selected {
+  background: #ff0000;
+  border: 0 solid #ff0000;
+}
+
+.red_rect{
+    background-color: #d73243;
+}
+
+.yellow_rect{
+    background-color: #a2ca45;
+}
+
+.green_rect{
+    background-color: #a2ca46;
+}
+
+.orange_rect{
+    background-color: #ff810c;
+}
+
+.rect1{
+    height: 350px;
+    width: 150px;
+    position: absolute;
+    left: 75%;
+    -webkit-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+    box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+}
+
+.rect2{
+    height: 400px;
+    width: 175px;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(0, -30%);
+    font-size: 10em;
+    color: white;
+    font-weight: 100;
+    display:flex;
+    align-items: center;
+    -webkit-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+    box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+}
+.rect2 p{
+    position: relative;
+    left: -20%;
+}
+
+.rect3{
+    height: 390px;
+    width: 670px;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    -webkit-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+    box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+}
+
+.text-block{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #1e334e;
+    width: 500px;
+    left: -50%;
+    transform: translateX(20%);
+    color: white;
+    padding: 5vh;
+    font-size: 1.5em;
+    justify-content: center;
+    -webkit-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+    box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
+}
+
+.desig{
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.company-text{
+    border: 0;
+    margin: 0;
+    padding: 3vh;
+    font-size: 2em;
+    line-height: 40px;
+    color: #051a63;
+    font-weight: 500;   
+}
