@@ -630,3 +630,14 @@ video{
 .row:hover ~ #circle{
   background-color: pink !important;
 }
+
+.img-banner1{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/landing/Stride-Ventures-sugar.jpg") !important;
+}
+.img-banner2{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/landing/Stride-Ventures-homelane.jpg") !important;
+}
