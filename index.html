@@ -10,16 +10,12 @@
         <link rel="stylesheet" href="assets/stylesheets/landing3f99.css" />
         <link rel="stylesheet" href="assets/stylesheets/home.css" />
         <link rel="stylesheet" href="assets/stylesheets/main.css">
-        <link rel="stylesheet" href="assets/stylesheets/index3.css">
+        <!-- <link rel="stylesheet" href="assets/stylesheets/index3.css"> -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -28,7 +24,7 @@
         <span class="nav">
             <div class="logosa"><a href="/"><img src="./assets/images/logo-white.png" class="logopic" alt="logo" style="position: relative !important;"></a></div>
             <div class="menu">
-                <a href="#about">About</a><a href="#advantages-section">Team</a><a href="#clients">Investments</a>
+                <a href="#about">About</a><a href="teams.html">Team</a><a href="#clients">Investments</a>
             </div>
             <div class="hamburger2">
                 <div class="hamburger" onclick="myFunction(this)">
@@ -359,164 +355,13 @@
         <script src=" assets/javascripts/landing3f99.js?v=1622567909"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
         <script>
             AOS.init({
             	once: false
             });
         </script>
         <script src=" assets/javascripts/counter.js"></script>
-        <script>
-            const cursor = document.getElementById('circle');
-            
-            // document.addEventListener('mousemove', (e) => {
-            //   cursor.style.cssText = `
-            //     left: ${e.clientX - cursor.offsetHeight/2}px;
-            //     top:  ${e.clientY - cursor.offsetHeight/2}px;
-            //   `;
-            // });
-
-
-            document.addEventListener('DOMContentLoaded', () => {
-            let mousePosX = 0,
-                mousePosY = 0,
-                mouseCircle = document.getElementById('circle');
-
-            document.onmousemove = (e) => {
-                mousePosX = e.pageX - cursor.offsetHeight/2;
-                mousePosY = e.pageY - cursor.offsetHeight/2;
-            }
-
-            let delay = 6,
-                revisedMousePosX = 0,
-                revisedMousePosY = 0;
-
-            function delayMouseFollow() {
-                requestAnimationFrame(delayMouseFollow);
-
-                revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
-                revisedMousePosY += (mousePosY - revisedMousePosY) / delay; 
-
-                mouseCircle.style.top = revisedMousePosY + 'px';
-                mouseCircle.style.left = revisedMousePosX + 'px';
-            }
-            delayMouseFollow();
-        });
-
-        
-            function incHeight() {
-                // var el = document.getElementById("circle");
-                // var height = el.offsetHeight;
-                // var newHeight = height + 200;
-                // el.style.height = newHeight + 'px';
-                // el.style.width = newHeight + 'px';
-            
-                getElementById('circle').setAttribute("style","height:500px");
-            }
-            setInterval(incHeight, 3000); 
-            
-            document.addEventListener('click', () => {
-                cursor.classList.add("expand");
-                setTimeout(() => {
-                    cursor.classList.remove("expand");
-                }, 500)
-            });
-            
-            document.getElementsByClassName("hamburger").addEventListener('click',()=>{
-              alert("asd")  
-              document.getElementsByClassName("bar1").classList.toggle("blue");
-            })
-            
-            function myFunction(x) {
-            x.classList.toggle("change");
-            document.getElementById("ext-menu").classList.toggle("show-menu")
-            
-            document.querySelector(".alpha").classList.toggle("blur")
-            }
-            
-            
-            var carousel = document.querySelector('.main-carousel');
-            var flkty = new Flickity( carousel, {
-              imagesLoaded: true,
-              percentPosition: false,
-            });
-            
-            var imgs = carousel.querySelectorAll('.carousel-cell3 img');
-            // get transform property
-            var docStyle = document.documentElement.style;
-            var transformProp = typeof docStyle.transform == 'string' ?
-              'transform' : 'WebkitTransform';
-            
-            flkty.on( 'scroll', function() {
-              flkty.slides.forEach( function( slide, i ) {
-                var img = imgs[i];
-                var x = ( slide.target + flkty.x ) * -1/3;
-                img.style[ transformProp ] = 'translateX(' + x  + 'px)';
-              });
-            });
-
-            var vid = document.querySelector("video");
-            vid.playbackRate = 0.1;
-            // document.querySelector("a").addEventListener("mouseover", function(event){
-            //     alert("this")
-            //     document.querySelector("#circle").classList.add("dilate");
-            // })
-
-            // document.querySelector("a").addEventListener("mouseleave", function(event){
-            //     document.querySelector(".change-on-hover").classList.remove("someClass");
-            // }
-
-        </script>
-
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-        <script>
-            $(function() {
-            $('a').hover(function() {
-                $('#circle').animate({height: '70px', width: '70px'}, 200);
-            }, function() {
-                $('#circle').animate({height: '50px', width: '50px'}, 100);
-            });
-            });
-            $(function() {
-            $('.hamburger2').hover(function() {
-                $('#circle').animate({height: '70px', width: '70px'}, 200);
-            }, function() {
-                $('#circle').animate({height: '50px', width: '50px'}, 100);
-            });
-            });
-            $(function() {
-            $('.row').hover(function() {
-                $('#circle').animate({height: '70px', width: '70px'}, 200);
-            }, function() {
-                $('#circle').animate({height: '50px', width: '50px'}, 100);
-            });
-            });
-
-            var carousel = document.querySelector(".main-carousel");
-
-            flkty.on("change", function() {
-            console.log("Flickity active slide: " + flkty.selectedIndex);
-
-            flkty.cells.forEach(function(cell, i) {
-                if (cell.element == flkty.selectedElement) {
-                // play video if active slide contains one
-                // use <video playsinline ..> in your html to assure it works on ios devices
-                var video = cell.element.querySelector("video");
-                if (video) {
-                    console.log("playing video " + i);
-                }
-                return;
-                }
-
-                // pause all other videos
-                var video = cell.element.querySelector("video");
-                if (video) {
-                console.log("pausing video " + i);
-                video.pause();
-                }
-            });
-            });
-        </script> 
-        <script src="assets/javascripts/index3.js"></script>
+        <script src="assets/javascripts/index.js"></script>
+        <script src="./assets/javascripts/global.js"></script>
     </body>
 </html>

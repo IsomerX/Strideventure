@@ -7,6 +7,7 @@ body {
   /* font-family: 'Montserrat', sans-serif !important; */
   font-family: "Poppins", sans-serif !important;
   font-size: 22px !important;
+  overflow-x: hidden;
 }
 
 section#desc {
@@ -809,7 +810,7 @@ body {
     height: 350px;
     width: 150px;
     position: absolute;
-    left: 75%;
+    left: 76%;
     -webkit-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
     box-shadow: -10px 10px 36px -2px rgba(0,0,0,0.75);
@@ -820,8 +821,8 @@ body {
     width: 175px;
     position: absolute;
     top: 50%;
-    left: 18%;
-    transform: translate(0, -30%);
+    left: 15%;
+    transform: translate(0, -40%);
     font-size: 10em;
     color: white;
     font-weight: 100;
@@ -876,5 +877,5 @@ body {
     font-size: 1.5em !important;
     line-height: 40px;
     color: #051a63;
-    font-weight: 500;   
+    font-weight: 300;   
 }
