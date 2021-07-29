@@ -118,14 +118,6 @@ box-shadow: -10px 10px 43px -20px rgba(0,0,0,0.75);
 }
 
 /* nav menu */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 10%;
-}
-
 .logosa {
   cursor: pointer;
 }
@@ -508,7 +500,7 @@ footer{
   position: absolute;
   left: 0;
   top:0;
-  z-index: 1000000000;
+  z-index: 10000001231112 !important;
   /* background-color: red; */
   border-radius: 50%;
   border: 2px solid grey;
