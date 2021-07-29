@@ -6,37 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stride Ventures - Teams</title>
 
-    <script type="text/javascript">
-      if (screen.width <= 699) {
-        document.location = "teams-m.html";
-      }
-    </script>
-    <script language="javascript">
-      if (
-        navigator.userAgent.match(/iPhone/i) ||
-        navigator.userAgent.match(/iPod/i)
-      ) {
-        location.replace("teams-m.html");
-      }
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./assets/stylesheets/main.css"> -->
-    <link rel="stylesheet" href="./assets/stylesheets/teams.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/teams-m.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
   </head>
   <body>
-    <div id="circle"></div>
-    <span class="nav">
+    <span id="nav">
       <div class="logosa">
         <a href="/"
           ><img
@@ -45,10 +25,6 @@
             alt="logo"
             style="position: relative !important"
         /></a>
-      </div>
-      <div class="menu">
-        <a href="#about">About</a><a href="#advantages-section">Team</a
-        ><a href="#clients">Investments</a>
       </div>
       <div class="hamburger2">
         <div class="hamburger" onclick="myFunction(this)">
@@ -60,6 +36,9 @@
     </span>
 
     <div id="ext-menu">
+      <div><a href="">About</a></div>
+      <div><a href="" style="font-weight: 600 !important;">Teams</a></div>
+      <div><a href="">Investments</a></div>
       <div><a href="">News</a></div>
       <div><a href="">Connect</a></div>
       <div><a href="">Career</a></div>
@@ -67,7 +46,7 @@
     <div class="box"></div>
     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L80,197.3C160,203,320,213,480,202.7C640,192,800,160,960,149.3C1120,139,1280,149,1360,154.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> -->
     <div class="wrapper">
-      <div class="spacing-200"></div>
+      <!-- <div class="spacing-100"></div> -->
       <div class="team-heading">Team</div>
       <div class="divider"></div>
       <p class="text">
@@ -78,7 +57,7 @@
         360-degree financial ecosystem for our entrepreneurs
       </p>
 
-      <div class="spacing-200"></div>
+      <div class="spacing-100"></div>
       <section class="people-grid">
         <div
           class="card"
@@ -322,24 +301,15 @@
         </div>
       </section>
     </div>
-
-    <div class="spacing-200"></div>
-
+    <div class="back-up">
+    <a href="#nav">
+        Go Back Up
+    </a>
+    </div>
     <footer>
       <div class="cols">
         <div class="footer-logo">
           <img src="./assets/images/logo-white.png" />
-        </div>
-        <div class="links">
-          <div>About</div>
-          <div>Team</div>
-          <div>Investments</div>
-        </div>
-        <div class="links-ext">
-          <div>News</div>
-          <div>Podcast</div>
-          <div>Career</div>
-          <div>Contacts</div>
         </div>
       </div>
       <br />
