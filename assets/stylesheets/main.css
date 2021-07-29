@@ -250,6 +250,7 @@ section#news {
 .news-item img {
   width: 100%;
   height: 250px;
+  object-fit: cover;
   background-color: grey;
   transition: 0.2s all linear;
 }
