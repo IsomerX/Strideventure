@@ -393,15 +393,15 @@ section#companies {
 }
 
 .para{
-  font-size: 0.9em;
-  font-weight: 300;
-  line-height: 1.4em;
+  font-size: 1em;
+  font-weight: 200;
+  line-height: 1.3em;
 }
 
 .content{
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: space-around;
 }
 
 .names{
@@ -411,20 +411,21 @@ section#companies {
   justify-content: space-between;
   flex-direction: column;
   font-weight: 200;
+  font-size: 1em;
 }
 
 .heading{
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 300;
 }
 
 .item-title{
-  font-size: 0.8em
+  font-size: 1em
 }
 
 .item-text{
-  font-size: 2em;
-  font-weight: 100;
+  font-size: 1em;
+  font-weight: 200;
 }
 
 
