@@ -229,7 +229,7 @@ span.nav {
 }
 
 .desc-title {
-  width: 30%;
+  width: 25%;
   /* font-weight: 500; */
   font-size: 1.3em;
   line-height: 1.3em;
@@ -241,14 +241,15 @@ span.nav {
 }
 
 .desc-description {
-  width: 60%;
+  width: 70%;
   color: #646464;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.3em;
   padding-top: 8vh;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0,0,0,0.1);
 }
+
 
 /* standard template end */
 
@@ -335,7 +336,13 @@ section#companies {
   border-radius: 10px;
 }
  
-.company-popup{
+
+
+.company-popup::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.company-item{
   position: fixed;
   top: 0;
   right: 0;
@@ -348,18 +355,13 @@ section#companies {
   overflow-y: scroll;
   z-index: 1123123123123;
   transition: 0.3s all ease-in-out;
-  /* display: none; */
+  display: block !important;
   opacity: 0;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;
 }
 
-.company-popup::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
-}
-
-.avanti{
-  /* display: block; */
+.company-popup{
   transition: 0.3s all ease-in-out;
   opacity: 1;
   right: 0%;
@@ -399,12 +401,12 @@ section#companies {
 .content{
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .names{
   display: flex;
-  width: 50%;
+  width: 85%;
   padding: 2vh 0;
   justify-content: space-between;
   flex-direction: column;
@@ -423,4 +425,11 @@ section#companies {
 .item-text{
   font-size: 2em;
   font-weight: 100;
+}
+
+
+
+footer a{
+  text-decoration: none;
+  color: white !important;
 }

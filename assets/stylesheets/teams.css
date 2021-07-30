@@ -229,7 +229,7 @@ span.nav {
 }
 
 .desc-title {
-  width: 30%;
+  width: 25%;
   /* font-weight: 500; */
   font-size: 1.3em;
   line-height: 1.3em;
@@ -241,14 +241,15 @@ span.nav {
 }
 
 .desc-description {
-  width: 60%;
+  width: 70%;
   color: #646464;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.3em;
   padding-top: 8vh;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0,0,0,0.1);
 }
+
 
 /* standard template end */
 
@@ -290,7 +291,7 @@ p.text {
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-content: center;
-  row-gap: 2vh;
+  row-gap: 7vh;
 }
 
 .card {
@@ -299,9 +300,10 @@ p.text {
   background-size: 100% 100%;
   overflow: hidden;
   background-position: center;
+  background-size: 100% 100%;
   display: flex;
   align-items: flex-end;
-  transition: 0.3s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .overlay {
@@ -342,8 +344,9 @@ p.text {
   background-color: #c14148a8;
 }
 
-.card:hover > .overlay {
+.card:hover{
   height: 484px;
+  background-size: 110% 110%;
 }
 
 .name {
@@ -412,4 +415,10 @@ footer {
   /* position: relative; */
   padding-top: 30px;
   padding-bottom: 20px;
+}
+
+
+footer a{
+  text-decoration: none;
+  color: white !important;
 }
