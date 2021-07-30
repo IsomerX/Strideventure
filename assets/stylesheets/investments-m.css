@@ -237,18 +237,18 @@ section#companies {
 }
 
 .company-item{
-  position: absolute !important;
-  top: 120px;
+  position: fixed !important;
+  margin: 0;
   background-color: #002063;
   color: white;
   padding: 5vh 5vh;
-  width: 60%;
-  right: 0;
+  width: 70%;
+  /* right: 0; */
   height: 80vh;
   overflow-y: scroll;
   z-index: 1123123123123;
   transition: 0.3s all ease-in-out;
-  display: block !important;
+  display: none ;
   opacity: 0;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;
@@ -256,8 +256,11 @@ section#companies {
 
 .company-popup{
   transition: 0.3s all ease-in-out;
+  display: block;
   opacity: 1;
-  right: 0% !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .close{
@@ -270,18 +273,13 @@ section#companies {
   top: 3vh;
 }
 
-.side-bar-open{
-  transform: translateX(-15%);
-  /* width: 80%; */
-  transition: 0.3s all ease-in-out;
-}
 
 .company-title{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 10%;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .divider2{
@@ -292,15 +290,15 @@ section#companies {
 }
 
 .para{
-  font-size: 0.8em;
-  font-weight: 300;
-  line-height: 1.4em;
+  font-size: 1em;
+  font-weight: 200;
+  line-height: 1.1em;
 }
 
 .content{
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  flex-direction: column;
 }
 
 .names{
@@ -309,21 +307,21 @@ section#companies {
   justify-content: space-between;
   flex-direction: column;
   font-weight: 200;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .heading{
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 300;
 }
 
 .item-title{
-  font-size: 0.8em
+  font-size: 1em
 }
 
 .item-text{
-  font-size: 1.6em;
-  font-weight: 100;
+  font-size: 1em;
+  font-weight: 200;
 }
 
 

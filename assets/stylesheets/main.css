@@ -63,6 +63,7 @@ section#desc {
   position: relative;
   height: 400px;
   width: 400px;
+  opacity: 0.7;
   background-color: pink;
   padding: 40px;
   color: white;
@@ -271,33 +272,6 @@ h1.news-titles {
   transition: 0.2s all linear;
 }
 
-/* footer */
-
-.site-footer {
-  height: 300px;
-  background-color: #012063;
-  padding: 45px 0 20px;
-  font-size: 12px;
-  line-height: 24px;
-  color: #fff;
-}
-
-.footer-links {
-  padding-left: 0;
-  list-style: none;
-}
-.footer-links li {
-  display: block;
-}
-.footer-links a {
-  color: #fff;
-}
-
-.copyright-text {
-  margin: 0;
-}
-
-/* footer end */
 
 span.nav {
   height: 130px;
@@ -417,7 +391,7 @@ span.nav {
 footer {
   background-color: #012063;
   height: auto;
-  padding: 10vh 10vh 0 10vh;
+  padding: 5vh 10vh 0 10vh;
 }
 
 footer a {
@@ -769,7 +743,7 @@ body {
 }
 
 .yellow_rect {
-  background-color: #a2ca45;
+  background-color: #afe237;
 }
 
 .green_rect {
@@ -780,10 +754,23 @@ body {
   background-color: #ff810c;
 }
 
+.orange_rect2{
+  background-color: #e07000;
+}
+
+.lightBlue_rect{
+  background-color: #00b0ff;
+}
+
+.brightYellow_rect{
+  background-color: #ffd500;
+}
+
 .rect1 {
   height: 350px;
   width: 150px;
   position: absolute;
+  opacity: 0.9;
   left: 76%;
   -webkit-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
@@ -793,6 +780,7 @@ body {
 .rect2 {
   height: 400px;
   width: 175px;
+  opacity: 0.9;
   position: absolute;
   top: 50%;
   left: 15%;
@@ -815,6 +803,7 @@ body {
   height: 390px;
   width: 670px;
   position: absolute;
+  opacity: 0.9;
   bottom: 0;
   right: 3%;
   -webkit-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
