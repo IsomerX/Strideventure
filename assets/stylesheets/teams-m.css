@@ -313,22 +313,11 @@ p.text {
   font-size: 0.9em;
 }
 
-.overlay img {
-  height: 30px;
-}
 
 .socials {
   padding-top: 2vh;
 }
 
-.socials img {
-  opacity: 0.8;
-  transition: 0.2 all ease-in-out;
-}
-
-.socials img:hover {
-  opacity: 1;
-}
 
 footer {
   background-color: #012063;

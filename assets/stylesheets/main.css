@@ -820,7 +820,7 @@ body {
   left: -50%;
   transform: translateX(20%);
   color: white;
-  padding: 5vh;
+  padding: 3vh;
   font-size: 1.1em !important;
   justify-content: center;
   -webkit-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
@@ -838,7 +838,7 @@ body {
   margin: 0;
   padding: 3vh 3vh 0 3vh;
   font-size: 1.1em !important;
-  line-height: 40px;
+  /* line-height: 40px; */
   color: #051a63;
   font-weight: 300;
 }
@@ -992,7 +992,7 @@ body {
 
   #counters {
     height: 50vh;
-    width: calc(80% - 30vh);
+    width: calc(80% - 28vh);
     background-color: #012063;
     position: relative;
     top: 100%;

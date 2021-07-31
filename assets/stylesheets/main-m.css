@@ -852,3 +852,35 @@ body {
   align-items: center;
 }
 
+.head-pic{
+  width: 100vw;
+  height: 100vw;
+  background-size: cover;
+  background-image: url("../images/landing/buildings2.png");
+}
+
+#what{
+  padding-top: 0 !important;
+}
+
+.content-what div{
+  width: 100vw;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+  display: flex;
+  flex-direction: column;
+  /* padding: 2vh; */
+  color: black;
+}
+
+.heading-what{
+  background-color: #E60C00 !important;
+  padding: 5vh 2vh;
+  color: white !important;
+}
+
+.point{
+  padding: 2vh;
+  font-size: 0.8em;
+  font-weight: 300;
+}
