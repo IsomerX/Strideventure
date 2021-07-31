@@ -153,8 +153,7 @@ span#nav {
 }
 
 #ext-menu div {
-  padding: 0vh 5vh;
-  height: 100px;
+  padding: 5vh 5vh;
   width: 100%;
   display: flex;
   justify-content: baseline;
