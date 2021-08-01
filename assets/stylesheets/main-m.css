@@ -70,7 +70,7 @@ section#desc {
   height: 70vw;
   width: 70vw;
   background-color: pink;
-  padding: 30px !important;
+  padding: 20px 20px 20px 20px  !important;
   color: white;
   font-family: poppins;
   display: flex;
@@ -94,8 +94,9 @@ section#desc {
 .card-gallery .card-para {
   font-weight: 500;
   letter-spacing: 0.1px;
-  position: relative;
+  /* position: relative; */
   font-size: 1em;
+  width: 100%;
 }
 
 .green {

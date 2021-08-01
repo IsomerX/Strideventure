@@ -29,7 +29,7 @@ section#desc {
 .desc-title {
   width: 25%;
   /* font-weight: 500; */
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.3em;
   letter-spacing: 0.5px;
   color: #081b52;
@@ -42,7 +42,7 @@ section#desc {
   width: 70%;
   color: #646464;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1.3em;
   padding-top: 8vh;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -821,7 +821,7 @@ body {
   transform: translateX(20%);
   color: white;
   padding: 3vh;
-  font-size: 1.1em !important;
+  font-size: 1em !important;
   justify-content: center;
   -webkit-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
@@ -837,7 +837,7 @@ body {
   border: 0;
   margin: 0;
   padding: 3vh 3vh 0 3vh;
-  font-size: 1.1em !important;
+  font-size: 1em !important;
   /* line-height: 40px; */
   color: #051a63;
   font-weight: 300;
@@ -859,12 +859,12 @@ body {
 
 .grid-item .news-title2 {
   padding: 3vh 0 0 0;
-  font-size: 1em;
+  font-size: 0.85em;
   width: 95%;
 }
 
 .grid-item .news-subtitle2 {
-  font-size: 0.7em;
+  font-size: 0.75em;
   color: grey;
 }
 
@@ -968,7 +968,7 @@ body {
     transform: translateX(20%);
     color: white;
     padding: 3vh;
-    font-size: 1em !important;
+    font-size: 0.9em !important;
     justify-content: center;
     -webkit-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
@@ -984,7 +984,7 @@ body {
     border: 0;
     margin: 0;
     padding: 3vh;
-    font-size: 1.3em !important;
+    font-size: 0.9em !important;
     line-height: 30px;
     color: #051a63;
     font-weight: 300;

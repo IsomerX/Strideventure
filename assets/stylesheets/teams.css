@@ -318,27 +318,27 @@ p.text {
 }
 
 .orange{
-  background-color: #f27f21a8;
+  background-color: #f27f21a9;
 }
 
 .yellow{
-  background-color: #ffca3fa8;
+  background-color: #ffca3fa9;
 }
 
 .green{
-  background-color: #93ca55a8;
+  background-color: #93ca55a9;
 }
 
 .blue{
-  background-color: #059cd6a8;
+  background-color: #059cd6a9;
 }
 
 .red{
-  background-color: #c14148a8;
+  background-color: #c14148a9;
 }
 
 .purple{
-  background-color: #c14148a8;
+  background-color: #c14148a9;
 }
 
 .card:hover{
@@ -346,9 +346,9 @@ p.text {
 }
 
 .name {
-  font-size: 1.1em;
-  font-weight: 300;
-  padding: 1vh 0;
+  font-size: 0.8em;
+  font-weight: 500;
+  /* padding-bottom: 0.5em; */
 }
 
 .divider2 {
@@ -356,22 +356,25 @@ p.text {
   width: 100%;
   background-color: white;
   margin: 0 auto;
+  display: none;
 }
 
 .designation {
-  font-weight: 100;
-  line-height: 30px;
-  height: 60px;
+  font-weight: 500;
+  /* line-height: 30px; */
+  /* height: 60px; */
+  /* padding-top: 0.5em; */
   display: flex;
   align-items: center;
+  font-size: 0.7em;
 }
 
 .overlay img {
-  height: 30px;
+  height: 20px;
 }
 
 .socials {
-  padding-top: 1vh;
+  padding-top: 0.5vh;
 }
 
 .socials img {
