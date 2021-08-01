@@ -51,7 +51,7 @@ span.nav {
   display: flex;
   position: absolute;
   z-index: 123123213123;
-  background-color: #002063;
+  /* background-color: #002063; */
 }
 
 .logosa {
@@ -255,7 +255,8 @@ span.nav {
 .wrapper {
   padding-top: 130px;
   width: 80%;
-  margin: 0 auto;
+  margin: -100vh auto 0 auto;
+  /* margin: 0 auto; */
   transition: 0.3s all ease-in-out;
   /* background-color: pink; */
 }
@@ -333,6 +334,7 @@ section#companies {
   width: 50%;
   transition: 0.3s all ease-in-out;
   border-radius: 10px;
+  /* border: 1px solid grey; */
 }
  
 
@@ -358,6 +360,7 @@ section#companies {
   opacity: 0;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;
+  font-size: 0.7em;
 }
 
 .company-popup{
@@ -381,7 +384,7 @@ section#companies {
   display: flex;
   justify-content: left;
   margin-bottom: 10%;
-  font-size: 1em !important;
+  font-size: 1.2em;
 }
 
 .divider2{
@@ -400,6 +403,7 @@ section#companies {
 .content{
   display: flex;
   flex-direction: column;
+
   width: 100%;
 }
 
@@ -410,20 +414,17 @@ section#companies {
   justify-content: space-between;
   flex-direction: column;
   font-weight: 200;
-  font-size: 1em;
 }
 
 .heading{
-  font-size: 1em;
   font-weight: 300;
 }
 
-.item-title{
-  font-size: 1em
+.item{
+  display: flex;
 }
 
 .item-text{
-  font-size: 1em;
   font-weight: 200;
 }
 
@@ -432,4 +433,81 @@ section#companies {
 footer a{
   text-decoration: none;
   color: white !important;
+}
+
+#banner{
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/investments-banner.jpg");
+  background-repeat: no-repeat;
+  /* display: none; */
+  /* opacity: 0.6; */
+  /* z-index: -1;
+  position: absolute; */
+  top: 0;
+}
+
+
+.colon{
+  width: 10px;
+}
+
+.arya{
+  background-color: #5f6a30;
+}
+
+.homelane{
+  background-color: #d43732;
+}
+
+.zetwork{
+  background-color: #2f70b4;
+}
+
+.progcap{
+  background-color: #3170a5;
+}
+
+.avanti{
+  background-color: #274254;
+}
+
+.spinny{
+  background-color: #ec274e;
+}
+
+.exotel{
+  background-color: #149bff;
+}
+
+.aknamed{
+  background-color: #f36e3f;
+}
+
+.zip{
+  background-color: #ff6219;
+}
+
+.medi{
+  background-color: #ff6064;
+}
+
+.gramcover{
+  background-color: #62554c;
+}
+
+.medika{
+  background-color: #323c78;
+}
+
+.heal{
+  background-color: #d23489;
+}
+
+.ripplr{
+  background-color: #0c4160;
+}
+
+.stella{
+  background-color: #282c67;
 }

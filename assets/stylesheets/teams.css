@@ -51,8 +51,9 @@ span.nav {
   display: flex;
   position: absolute;
   z-index: 123123213123;
-  background-color: #002063;
+  /* background-color: #002063; */
 }
+
 
 .logosa {
   width: 37% !important;
@@ -254,9 +255,11 @@ span.nav {
 /* standard template end */
 
 .wrapper {
-  padding-top: 130px;
   width: 80%;
-  margin: 0 auto;
+  margin: -70vh auto 0 auto;
+  z-index: 999;
+  /* margin: 0 auto; */
+  /* margin-top: -20vh;/ */
   /* background-color: pink; */
 }
 
@@ -370,11 +373,12 @@ p.text {
 }
 
 .overlay img {
-  height: 20px;
+  height: 25px;
 }
 
 .socials {
   padding-top: 0.5vh;
+  display: flex;
 }
 
 .socials img {
@@ -425,4 +429,43 @@ footer {
 footer a{
   text-decoration: none;
   color: white !important;
+}
+
+#banner{
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/Team-banner.jpg");
+  background-repeat: no-repeat;
+  /* display: none; */
+  /* opacity: 0.6; */
+  /* z-index: -1;
+  position: absolute; */
+  top: 0;
+}
+
+.text{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: 200;
+  display: none;
+  color: white;
+}
+
+.email:hover + .mail{
+  display: block;
+}
+
+.mail{
+  font-size: 0.7em;
+  line-height: 25px;
+  display: none;
+  transition: 0.3s all linear;
+  color: white;
+}
+
+.mail:hover{
+  display: block;
 }
