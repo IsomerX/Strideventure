@@ -850,7 +850,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
 }
 
 .grid-item img {
@@ -877,11 +876,17 @@ body {
 }
 
 .grid {
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+#news2 .desc-description{
+  display: flex;
+}
+
+.spacer{}
 
 
 
