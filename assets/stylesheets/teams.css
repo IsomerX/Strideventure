@@ -344,8 +344,6 @@ p.text {
   background-color: #00205fa9;
 }
 
-.
-
 .card:hover{
   background-size: 110% 110%;
 }
@@ -466,8 +464,26 @@ footer a{
   display: none;
   transition: 0.3s all linear;
   color: white;
+  position: relative;
+  z-index: 100;
+  /* right: 10px; */
 }
 
 .mail:hover{
   display: block;
 }
+
+@media only screen and (max-width: 1700px ) {
+  .mail{
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .mail{
+    font-size: 0.5em;
+  }
+}
+
+
+
