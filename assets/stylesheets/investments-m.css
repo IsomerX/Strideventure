@@ -117,9 +117,10 @@ span#nav {
   transform: rotate(-45deg);
 }
 
+
 #ext-menu {
   /* height: 50vh; */
-  width: 60%;
+  width: 40%;
   background-color: white;
   flex-direction: column;
   align-items: space-between;
@@ -146,7 +147,7 @@ span#nav {
 
 #ext-menu a {
   color: black !important;
-  font-size: 1em;
+  font-size: 0.7em;
   text-decoration: none;
   transition: 0.2s all linear;
   font-weight: 300;
@@ -154,11 +155,10 @@ span#nav {
 }
 
 #ext-menu div {
-  padding: 0vh 5vh;
-  height: 100px;
+  padding: 2vh 2vh;
   width: 100%;
   display: flex;
-  justify-content: baseline;
+  justify-content: baseline; 
   align-items: center;
   transition: 0.5s all linear;
 
