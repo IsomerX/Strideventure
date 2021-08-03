@@ -290,7 +290,7 @@ section#companies {
 }
 
 .para{
-  font-size: 1em;
+  font-size: 0.7em;
   font-weight: 200;
   line-height: 1.1em;
 }
@@ -308,20 +308,20 @@ section#companies {
   justify-content: space-between;
   flex-direction: column;
   font-weight: 200;
-  font-size: 1em;
+  font-size: 0.7em;
 }
 
 .heading{
-  font-size: 1em;
+  font-size: 0.7em;
   font-weight: 300;
 }
 
 .item-title{
-  font-size: 1em
+  font-size: 0.7em;
 }
 
 .item-text{
-  font-size: 1em;
+  font-size: 0.7em;
   font-weight: 200;
 }
 
@@ -353,6 +353,7 @@ footer {
 
 .colon{
   width: 10px;
+  font-size: 0.7em;
 }
 
 .item{
@@ -361,8 +362,16 @@ footer {
 
 .website a{
   color: #fff;
+  font-size: 0.7em;
 }
 
+.amt{
+  font-size: 0.7em;
+}
+
+.socials img{
+  height:30px
+}
 
 .arya{
   background-color: #5f6a30;
