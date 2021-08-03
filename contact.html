@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stride Ventures - Teams</title>
+
+    <script type="text/javascript">
+      if (screen.width <= 699) {
+        document.location = "teams-m.html";
+      }
+    </script>
+    <script language="javascript">
+      if (
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPod/i)
+      ) {
+        location.replace("teams-m.html");
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./assets/stylesheets/main.css"> -->
+    <link rel="stylesheet" href="./assets/stylesheets/contact.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <div id="circle"></div>
+    <span class="nav">
+      <div class="logosa">
+        <a href="/"
+          ><img
+            src="./assets/images/logo-white.png"
+            class="logopic"
+            alt="logo"
+            style="position: relative !important"
+        /></a>
+      </div>
+      <div class="menu">
+        <a href="./index.html#about">About</a><a href="teams.html">Team</a
+        ><a href="./investments.html">Investments</a>
+      </div>
+      <div class="hamburger2">
+        <div class="hamburger" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+    </span>
+
+    <div id="ext-menu">
+      <div><a href="">News</a></div>
+      <div><a href="./contact.html">Contact</a></div>
+      <div><a href="">Career</a></div>
+    </div>
+
+    <div class="box"></div>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L80,197.3C160,203,320,213,480,202.7C640,192,800,160,960,149.3C1120,139,1280,149,1360,154.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> -->
+
+    <section id="banner">
+      <div class="text">Team</div>
+    </section>
+
+    <div class="wrapper">
+      <div class="spacing-100"></div>
+
+      <div class="spacing-100"></div>
+      <div class="interest">
+        <div class="desc-title">Get in Touch</div>
+        <div class="desc-description">
+            <form method="post" action="https://formspree.io/f/xayapdnb">
+                <input type="text" name="name" id="name" value="Full Name*" required>
+                <input type="email" name="_replyto" value="Email*" required>
+                <input type="tel" name="phone" value="Phone No.*" required>
+                <textarea name="message">Comment or Message</textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <img src="./assets/images/delhi.jpg" alt="">
+        <img src="./assets/images/somewhere.jpg" alt="">
+        <img src="./assets/images/mumbai.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="spacing-200"></div>
+
+    <footer>
+      <div class="cols">
+        <div class="footer-logo">
+          <a href="./index.html"
+            ><img src="./assets/images/logo-white.png"
+          /></a>
+        </div>
+        <div class="links">
+          <div><a href="#about"> About</a></div>
+          <div><a href="./teams.html">Team</a></div>
+          <div><a href="./investments.html">Investments</a></div>
+        </div>
+        <div class="links-ext">
+          <div><a href="#news2">News</a></div>
+          <div>Career</div>
+          <div><a href="./contact.html">Contact</a></div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="copyright">
+        &#169; Copyright 2021 | Stride Ventures | All Rights Reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false,
+        duration: 1200,
+      });
+    </script>
+    <script src="./assets/javascripts/global.js"></script>
+  </body>
+</html>
