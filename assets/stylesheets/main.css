@@ -42,7 +42,7 @@ section#desc {
   width: 70%;
   color: #646464;
   font-weight: 400;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1.3em;
   padding-top: 8vh;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -701,8 +701,8 @@ body {
 }
 
 .hero-slider {
-  height: 100vh;
-  width: 100%;
+  width: 100vw;
+  height: 50vw;
 }
 .hero-slider .carousel-cell-1 {
   width: 100vw;

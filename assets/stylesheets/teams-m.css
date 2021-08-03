@@ -156,7 +156,7 @@ span#nav {
   padding: 5vh 5vh;
   width: 100%;
   display: flex;
-  justify-content: baseline;
+  justify-content: baseline; 
   align-items: center;
   transition: 0.5s all linear;
 
@@ -257,38 +257,37 @@ p.text {
   display: flex;
   transition: 0.3s all ease-in-out;
   color: white;
-  padding: 3vh 3vh 3vh 3vh;
+  padding: 1vh 1vh 1vh 1vh;
 }
 
 .overlay img{
-  height: 30px !important;
+  height: 25px !important;
   /* width: 30px !important; */
   padding: 0 1vw;
 }
 
-
 .orange{
-  background-color: #f27f21a8;
+  background-color: #f27f21a9;
 }
 
 .yellow{
-  background-color: #ffca3fa8;
+  background-color: #ffca3fa9;
 }
 
 .green{
-  background-color: #93ca55a8;
+  background-color: #93ca55a9;
 }
 
 .blue{
-  background-color: #059cd6a8;
+  background-color: #059cd6a9;
 }
 
 .red{
-  background-color: #c14148a8;
+  background-color: #c14148a9;
 }
 
 .purple{
-  background-color: #c14148a8;
+  background-color: #00205fa9;
 }
 
 .card:hover {
@@ -297,25 +296,29 @@ p.text {
 }
 
 .name {
-  font-size: 1.1em;
+  font-size: 0.8em;
   font-weight: 300;
 }
 
 .divider2 {
   height: 1px;
-  width: 100%;
+  width: 85vw !important;
   background-color: white;
-  margin: 1vh auto;
+  margin: 0.2vh auto;
 }
 
 .designation {
   font-weight: 200;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 
 .socials {
-  padding-top: 2vh;
+  padding-top: 0.5vh;
+}
+
+.mail{
+  font-size: 0.7em;
 }
 
 

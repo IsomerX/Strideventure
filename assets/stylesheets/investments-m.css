@@ -301,6 +301,7 @@ section#companies {
   flex-direction: column;
 }
 
+
 .names{
   display: flex;
   width: 85%;
@@ -347,4 +348,78 @@ footer {
   color: rgba(255, 255, 255, 0.7);
   /* position: relative; */
   padding-bottom: 20px;
+}
+
+
+.colon{
+  width: 10px;
+}
+
+.item{
+  display: flex;
+}
+
+.website a{
+  color: #fff;
+}
+
+
+.arya{
+  background-color: #5f6a30;
+}
+
+.homelane{
+  background-color: #d43732;
+}
+
+.zetwork{
+  background-color: #2f70b4;
+}
+
+.progcap{
+  background-color: #3170a5;
+}
+
+.avanti{
+  background-color: #274254;
+}
+
+.spinny{
+  background-color: #ec274e;
+}
+
+.exotel{
+  background-color: #149bff;
+}
+
+.aknamed{
+  background-color: #f36e3f;
+}
+
+.zip{
+  background-color: #ff6219;
+}
+
+.medi{
+  background-color: #ff6064;
+}
+
+.gramcover{
+  background-color: #62554c;
+}
+
+.medika{
+  background-color: #323c78;
+}
+
+.heal{
+  background-color: #d23489;
+}
+
+.ripplr{
+  background-color: #0c4160;
+}
+
+.stella{
+  background-color: #282c67;
 }

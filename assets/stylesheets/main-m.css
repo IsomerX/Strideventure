@@ -45,8 +45,8 @@ section#desc {
 .desc-description {
   color: #646464;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 1.3em;
+  font-size: 0.7em;
+  line-height: 1.4em;
   padding-top: 4vh;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -95,7 +95,7 @@ section#desc {
   font-weight: 500;
   letter-spacing: 0.1px;
   /* position: relative; */
-  font-size: 1em;
+  font-size: 0.7em;
   width: 100%;
 }
 
@@ -194,7 +194,7 @@ span#nav {
 }
 
 .company-gallery .item img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -340,13 +340,13 @@ h1.news-titles {
   padding-top: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: baseline;
   align-items: center;
 }
 
 .counter,
 .counter-label {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 200;
 }
 
@@ -357,6 +357,7 @@ h1.news-titles {
 .unit p {
   color: rgba(255, 255, 255, 0.8) !important;
   font-weight: 300;
+  font-size: 0.6em;
 }
 
 
@@ -669,7 +670,7 @@ body {
 
 .hero-slider {
   width: 100vw;
-  height: 50.6vw;
+  height: 100vw;
 }
 .hero-slider .carousel-cell-1 {
   width: 100vw;
@@ -708,110 +709,6 @@ body {
   border: 0 solid #ff0000;
 }
 
-.red_rect {
-  background-color: #d73243;
-}
-
-.yellow_rect {
-  background-color: #afe237;
-}
-
-.green_rect {
-  background-color: #a2ca46;
-}
-
-.orange_rect {
-  background-color: #ff810c;
-}
-
-.orange_rect2{
-  background-color: #e07000;
-}
-
-.lightBlue_rect{
-  background-color: #00b0ff;
-}
-
-.brightYellow_rect{
-  background-color: #ffd500;
-}
-
-.rect1 {
-  height: 350px;
-  width: 150px;
-  position: absolute;
-  opacity: 0.9;
-  left: 76%;
-  -webkit-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-}
-
-.rect2 {
-  height: 400px;
-  width: 175px;
-  opacity: 0.9;
-  position: absolute;
-  top: 50%;
-  left: 15%;
-  transform: translate(0, -40%);
-  font-size: 10em;
-  color: white;
-  font-weight: 100;
-  display: flex;
-  align-items: center;
-  -webkit-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-}
-.rect2 p {
-  position: relative;
-  left: -20%;
-}
-
-.rect3 {
-  height: 370px;
-  width: 670px;
-  position: absolute;
-  opacity: 0.9;
-  bottom: 0;
-  right: 3%;
-  -webkit-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-}
-
-.text-block {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: #1e334e;
-  width: 500px;
-  left: -50%;
-  transform: translateX(20%);
-  color: white;
-  padding: 5vh;
-  font-size: 1.1em !important;
-  justify-content: center;
-  -webkit-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: -10px 10px 36px -2px rgba(0, 0, 0, 0.75);
-}
-
-.desig {
-  font-weight: 200;
-  font-size: 0.9em;
-}
-
-.company-text {
-  border: 0;
-  margin: 0;
-  padding: 3vh 3vh 0 3vh;
-  font-size: 1.1em !important;
-  line-height: 40px;
-  color: #051a63;
-  font-weight: 300;
-}
 
 
 .grid-item {
@@ -820,7 +717,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 .grid-item img {
@@ -829,21 +726,14 @@ body {
 
 .grid-item .news-title2 {
   padding: 3vh 0 0 0;
+  line-height: 1.2em;
   font-size: 1em;
   width: 95%;
-}
+} 
 
 .grid-item .news-subtitle2 {
   font-size: 0.7em;
   color: grey;
-}
-
-.grid-item .grid-para {
-  font-size: 0.8em;
-  line-height: 1.3em;
-  display: none;
-  height: 0;
-  transition: 0.3s all ease-in-out;
 }
 
 .grid {
@@ -882,6 +772,24 @@ body {
 
 .point{
   padding: 2vh;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-weight: 300;
+}
+.spacer{
+  height: 50vh !important;
+  overflow-y: scroll;
+}
+
+.spacer::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.spacer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.spacer::-webkit-scrollbar-thumb {
+  background: #888;
 }
