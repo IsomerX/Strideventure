@@ -886,7 +886,29 @@ body {
   display: flex;
 }
 
-.spacer{}
+.spacer{
+  height: 500px !important;
+  overflow-y: scroll;
+}
+
+.spacer::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.spacer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.spacer::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.spacer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 
 
