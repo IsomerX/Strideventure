@@ -1,4 +1,3 @@
-/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -878,26 +877,6 @@ iframe {
 .section-border-fix {
   position: relative;
   margin-top: -1px;
-}
-@font-face {
-  font-family: SuisseIntl-Regular;
-  src: url(https://accent.ru/assets/fonts/suisse-intl/SuisseIntl-Regular-WebXL.woff2)
-      format("woff2"),
-    url(https://accent.ru/assets/fonts/suisse-intl/SuisseIntl-Regular-WebXL.woff)
-      format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: SuisseIntl-Regular;
-  src: url(https://accent.ru/assets/fonts/suisse-intl/SuisseIntl-Bold-WebXL.woff2)
-      format("woff2"),
-    url(https://accent.ru/assets/fonts/suisse-intl/SuisseIntl-Bold-WebXL.woff)
-      format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
 html {
   font-size: 62.5%;
@@ -5861,7 +5840,6 @@ textarea[disabled] + .form-label {
   height: 20px;
   left: -1px;
   top: -1px;
-  background: url(https://accent.ru/assets/images/common/checkbox.svg);
   background-size: cover;
   transition-property: opacity;
   opacity: 0;
