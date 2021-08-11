@@ -534,24 +534,12 @@ footer a {
   height: 100vh;
 }
 
-.carousel-cell3:nth-child(1) {
-  /* background-image: url("../images/landing/bg-banner1.jpg") !important;
-  background-position: center;
-  background-size: cover; */
-}
-
 video {
   position: absolute;
   object-fit: cover;
   z-index: -1;
   height: 100vh;
   width: 100%;
-}
-
-.carousel-cell3:nth-child(2) {
-  /* background-image: url("../images/landing/beta.jpeg") !important;
-  background-position: center;
-  background-size: cover; */
 }
 
 .dots {
@@ -602,6 +590,12 @@ video {
 
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#advantages-section{
+  background-image: url("../images/landing/buildings2.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 section#banner-t {
