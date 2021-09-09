@@ -77,20 +77,37 @@
       <div class="interest">
         <div class="desc-title">Get in Touch</div>
         <div class="desc-description">
-            <form method="post" action="https://formspree.io/f/xayapdnb">
-                <input type="text" name="name" id="name" value="Full Name*" required>
-                <input type="email" name="_replyto" value="Email*" required>
-                <input type="tel" name="phone" value="Phone No.*" required>
-                <textarea name="message">Comment or Message</textarea>
-                <input type="submit" value="Submit">
-            </form>
+          <form method="post" action="https://formspree.io/f/xayapdnb">
+            <span>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                value="Full Name*"
+                required
+              />
+              <input type="email" name="_replyto" value="Email*" required />
+            </span>
+            <input type="tel" name="phone" value="Phone No.*" required />
+            <textarea name="message">Comment or Message</textarea>
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </div>
 
       <div class="gallery">
-        <img src="./assets/images/delhi.jpg" alt="">
-        <img src="./assets/images/vidhan saudha.jpg" alt="">
-        <img src="./assets/images/mumbai.jpg" alt="">
+        <div class="card">
+          <img src="./assets/images/delhi.png" alt="" />
+          <span>Delhi</span>
+        </div>
+        <div class="card">
+          <img src="./assets/images/vidhan saudha.jpg" alt="" />
+          <span>Karnataka</span>
+        </div>
+        <div class="card">
+          <img src="./assets/images/mumbai.png" alt="" />
+          <span>Mumbai</span>
+        </div>
       </div>
     </div>
 

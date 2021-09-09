@@ -126,7 +126,7 @@ section#desc {
 .bar3 {
   width: 30px;
   height: 2px;
-  background-color: white;
+  background-color: #062562 ;
   margin: 8px 0;
   transition: 0.4s;
 }
@@ -277,8 +277,10 @@ span.nav {
   height: 130px;
   width: 100%;
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   z-index: 123123213123;
+  background-color: white;
+  color: #062562 !important;
 }
 
 .logosa {
@@ -304,20 +306,16 @@ span.nav {
 }
 
 .menu a {
-  color: white !important;
+  color: #062562 !important;
   font-weight: 400;
   font-size: 0.9em;
   transition: 0.2s all linear;
   text-decoration: none;
+  border-bottom: 1px solid white;
 }
 
 .menu a:hover {
-  color: rgba(255, 255, 255, 0.7) !important;
-}
-
-.menu a:hover ~ #circle {
-  height: 100px;
-  width: 100px;
+  border-bottom: 1px solid #062562;
 }
 
 .hamburger2 {

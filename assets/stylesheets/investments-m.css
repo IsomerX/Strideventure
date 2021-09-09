@@ -52,7 +52,7 @@ span#nav {
   display: flex;
   position: absolute;
   z-index: 123123213123;
-  background-color: #002063;
+  background-color: white;
 }
 
 .logosa {
@@ -83,7 +83,7 @@ span#nav {
 .bar3 {
   width: 30px;
   height: 2px;
-  background-color: white;
+  background-color: #062562;
   margin: 8px 0;
   transition: 0.4s;
 }
