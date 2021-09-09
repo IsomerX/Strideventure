@@ -85,9 +85,9 @@ html {
     text-decoration: none;
   }
   
-  .menu a:nth-child(2) {
+  /* .menu a:nth-child(2) {
     font-weight: 600;
-  }
+  } */
   
   .menu a:hover {
     color: rgba(255, 255, 255, 0.7) !important;
