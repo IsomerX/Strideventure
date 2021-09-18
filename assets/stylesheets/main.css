@@ -277,9 +277,9 @@ span.nav {
   height: 130px;
   width: 100%;
   display: flex;
-  /* position: absolute; */
+  position: absolute;
   z-index: 123123213123;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   color: #062562 !important;
 }
 
@@ -311,7 +311,7 @@ span.nav {
   font-size: 0.9em;
   transition: 0.2s all linear;
   text-decoration: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid transparent;
 }
 
 .menu a:hover {
