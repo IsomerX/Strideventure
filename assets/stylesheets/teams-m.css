@@ -49,8 +49,6 @@ span#nav {
   height: 70px;
   width: 100%;
   display: flex;
-  position: absolute;
-  z-index: 123123213123;
   background-color: white;
 }
 
@@ -167,7 +165,6 @@ span#nav {
 /* standard template end */
 
 .wrapper {
-  padding-top: 130px;
   width: 95%;
   margin: 0 auto;
   /* background-color: pink; */
@@ -332,4 +329,46 @@ footer {
   display: flex;
   justify-content: center;
   text-decoration: none;
+}
+
+
+#about {
+  /* height: 45vh; */
+  padding: 3vh 0 6vh 0;
+}
+
+section#desc {
+  padding-bottom: 10vh;
+  width: 100%;
+  background-color: #f1f1f1;
+  /* height: 200vh; */
+}
+
+.interest {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.desc-title {
+  /* width: 25%; */
+  /* font-weight: 500; */
+  font-size: 1em;
+  line-height: 1.3em;
+  letter-spacing: 0.5px;
+  color: #081b52;
+  /* flex: 1 0 auto; */
+  padding: 4vh 0;
+}
+
+.desc-description {
+  color: #646464;
+  font-weight: 400;
+  font-size: 0.7em;
+  line-height: 1.4em;
+  padding-top: 4vh;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }

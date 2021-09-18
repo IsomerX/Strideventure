@@ -73,15 +73,16 @@ $(function () {
       num = $(this).attr("data-TargetNum");
       speed = $(this).attr("data-Speed");
       direction = $(this).attr("data-Direction");
+      bn=$(this).attr("data-bn");
       easing = $(this).attr("data-Easing");
       if (speed == undefined) speed = defaultSpeed;
       $(this).addClass("c_" + index); //add a class to recognize each counter
-      doCount(num, index, speed, groupId, direction, easing);
+      doCount(num, index, speed, groupId, direction, easing,bn);
       index++;
     });
   }
 
-  function doCount(num, index, speed, groupClass, direction, easing) {
+  function doCount(num, index, speed, groupClass, direction, easing,bn) {
     let className = groupClass + " " + counterClass + "." + "c_" + index;
     if (easing == undefined) easing = "swing";
     $(className).animate(
@@ -94,7 +95,10 @@ $(function () {
         step: function (now) {
           if (direction == "reverse") {
             $(this).text(num - Math.floor(now));
-          } else {
+          } else if(bn==1) {
+            $(this).text(now.toPrecision(2));
+          }
+          else {
             $(this).text(Math.floor(now));
           }
         },

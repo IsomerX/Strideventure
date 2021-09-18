@@ -49,7 +49,6 @@
             <div><a href="./investments.html">Investments</a></div>
             <div><a href="#news2">News</a></div>
             <div><a href="./contact.html">Contact</a></div>
-            <div><a href="">Career</a></div>
           </div>
         
         
@@ -83,7 +82,7 @@
             <span class="counter-grid">
                 <div class="unit">
                     <div class="plus-counter">
-                        <div class="counter" id="plus" data-TargetNum="800" data-Speed="2500">0</div>
+                        <div class="counter" id="plus" data-TargetNum="950" data-Speed="2500">0</div>
                         <div class="counter-label">+</div>
                     </div>
                     <br>
@@ -95,19 +94,19 @@
                     <p>Sectors<br>Invested In</p>
                 </div>
                 <div class="unit">
-                    <div class="counter" data-TargetNum="29" data-Speed="2500">29</div>
+                    <div class="counter" data-TargetNum="32" data-Speed="2500">32</div>
                     <br>
                     <p>Investments<br>Made</p>
                 </div>
                 <div class="unit">
-                    <div class="plus-counter">
-                        <div class="counter-label">$ </div>
-                        <div class="counter" id="cr" data-TargetNum="1" data-Speed="500">1</div>
-                        <div class="counter-label">Bn</div>
-                    </div>
-                    <br>
-                    <p>Total Funds Raised</p>
-                </div>
+                  <div class="plus-counter">
+                      <div class="counter-label">$ </div>
+                      <div class="counter" id="cr" data-TargetNum="1.5" data-Speed="1000" data-bn="1">1.5</div>
+                      <div class="counter-label">Bn</div>
+                  </div>
+                  <br>
+                  <p>Total Funds Raised<br>by these companies</p>
+              </div>
             </span>
         </div>
 
@@ -329,15 +328,16 @@
       num = $(this).attr("data-TargetNum");
       speed = $(this).attr("data-Speed");
       direction = $(this).attr("data-Direction");
+      bn=$(this).attr("data-bn");
       easing = $(this).attr("data-Easing");
       if (speed == undefined) speed = defaultSpeed;
       $(this).addClass("c_" + index); //add a class to recognize each counter
-      doCount(num, index, speed, groupId, direction, easing);
+      doCount(num, index, speed, groupId, direction, easing,bn);
       index++;
     });
   }
 
-  function doCount(num, index, speed, groupClass, direction, easing) {
+  function doCount(num, index, speed, groupClass, direction, easing,bn) {
     let className = groupClass + " " + counterClass + "." + "c_" + index;
     if (easing == undefined) easing = "swing";
     $(className).animate(
@@ -350,7 +350,10 @@
         step: function (now) {
           if (direction == "reverse") {
             $(this).text(num - Math.floor(now));
-          } else {
+          } else if(bn==1) {
+            $(this).text(now.toPrecision(2));
+          }
+          else {
             $(this).text(Math.floor(now));
           }
         },
@@ -359,6 +362,7 @@
     );
   }
 });
+
 
 function myFunction(x) {
               x.classList.toggle("change");

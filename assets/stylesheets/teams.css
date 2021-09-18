@@ -255,9 +255,13 @@ span.nav {
 
 /* standard template end */
 
+#about{
+  margin-top: -10vh;
+}
+
 .wrapper {
   width: 80%;
-  margin: -70vh auto 0 auto;
+  margin: -10vh auto 0 auto;
   z-index: 999;
   /* margin: 0 auto; */
   /* margin-top: -20vh;/ */
@@ -433,15 +437,8 @@ footer a{
 }
 
 #banner{
-  height: 100vh;
+  /* filter: blur(3px); */
   width: 100%;
-  background-image: url("../images/Team-banner.jpg");
-  background-repeat: no-repeat;
-  /* display: none; */
-  /* opacity: 0.6; */
-  /* z-index: -1;
-  position: absolute; */
-  top: 0;
 }
 
 .text{
@@ -496,5 +493,3 @@ footer a{
 }
 
 
-
- 
