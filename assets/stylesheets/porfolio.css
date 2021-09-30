@@ -511,3 +511,27 @@ footer a{
 #about{
   margin-top: -10vh;
 }
+
+@media only screen and (max-width: 1650px) {
+  .desc-title {
+    width: 25%;
+    /* font-weight: 500; */
+    font-size: 1.1em;
+    line-height: 1.3em;
+    letter-spacing: 0.5px;
+    color: #081b52;
+    /* flex: 1 0 auto; */
+    padding-top: 8vh;
+    border-top: 1px solid red;
+  }
+
+  .desc-description {
+    width: 70%;
+    color: #646464;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    padding-top: 8vh;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}

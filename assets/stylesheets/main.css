@@ -903,7 +903,6 @@ body {
 }
 
 
-
 @media only screen and (max-width: 1650px) {
   .interest {
     width: 90%;
@@ -917,7 +916,7 @@ body {
   .desc-title {
     width: 25%;
     /* font-weight: 500; */
-    font-size: 1.3em;
+    font-size: 1.1em;
     line-height: 1.3em;
     letter-spacing: 0.5px;
     color: #081b52;
@@ -930,12 +929,16 @@ body {
     width: 70%;
     color: #646464;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 1.3em;
     padding-top: 8vh;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
+  .card-para{
+    font-size: 0.9em;
+  }
+  
   .rect1 {
     height: 350px;
     width: 120px;
@@ -1023,4 +1026,41 @@ body {
     text-align: center;
     /* display: none; */
   }
+}
+
+
+
+
+
+@media only screen and (max-width: 1650px) {
+  .interest {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15vh;
+  }
+  .desc-title {
+    width: 25%;
+    /* font-weight: 500; */
+    font-size: 1.1em;
+    line-height: 1.3em;
+    letter-spacing: 0.5px;
+    color: #081b52;
+    /* flex: 1 0 auto; */
+    padding-top: 8vh;
+    border-top: 1px solid red;
+  }
+
+  .desc-description {
+    width: 70%;
+    color: #646464;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    padding-top: 8vh;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
 }
