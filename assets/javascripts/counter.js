@@ -96,7 +96,8 @@ $(function () {
           if (direction == "reverse") {
             $(this).text(num - Math.floor(now));
           } else if(bn==1) {
-            $(this).text(now.toPrecision(2));
+            // $(this).text(now.toPrecision(2));
+            $(this.text(now));
           }
           else {
             $(this).text(Math.floor(now));
