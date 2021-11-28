@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stride Ventures - Contact</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- <link rel="stylesheet" href="./assets/stylesheets/main.css"> -->
+        <link rel="stylesheet" href="./assets/stylesheets/main-m.css" />
+        <link rel="stylesheet" href="./assets/stylesheets/contact-m.css" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    </head>
+    <body>
+        <!-- <div id="circle"></div> -->
+
+        <span id="nav">
+            <div class="logosa">
+                <a href="/"
+                    ><img
+                        src="./assets/images/logo.png"
+                        class="logopic"
+                        alt="logo"
+                        style="position: relative !important"
+                /></a>
+            </div>
+            <div class="hamburger2">
+                <div class="hamburger" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </span>
+
+        <div id="ext-menu">
+            <div><a href="./index-m.html#about">About</a></div>
+            <div><a href="./teams-m.html">Team</a></div>
+            <div><a href="./portfolio.html">Portfolio</a></div>
+            <div><a href="#news2">News</a></div>
+            <div><a href="./contact.html">Contact</a></div>
+        </div>
+
+        <div class="spacing-100"></div>
+
+        <div class="spacing-100"></div>
+        <div class="interest">
+            <div class="desc-title">Get in Touch</div>
+            <!-- <div class="ruler"></div> -->
+        </div>
+        <form method="post" action="https://formspree.io/f/xayapdnb">
+            <span>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Full Name*"
+                    required
+                />
+                <input
+                    type="email"
+                    name="_replyto"
+                    placeholder="Email*"
+                    required
+                />
+            </span>
+            <input type="tel" name="phone" placeholder="Phone No.*" required />
+            <textarea name="message" rows="10">Comment or Message</textarea>
+            <input type="submit" placeholder="Submit" class="sub" />
+        </form>
+
+        <div class="gallery">
+            <div class="card">
+                <img src="./assets/images/delhi.png" alt="" />
+                <span>Delhi</span>
+            </div>
+            <div class="card">
+                <img src="./assets/images/vidhan saudha.jpg" alt="" />
+                <span>Bangalore</span>
+            </div>
+            <div class="card">
+                <img src="./assets/images/mumbai.png" alt="" />
+                <span>Mumbai</span>
+            </div>
+        </div>
+
+        <div class="spacing-200"></div>
+
+        <footer>
+            <
+            <div class="cols">
+                <div class="footer-logo">
+                    <img src="./assets/images/logo-white.png" />
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="copyright">
+                &#169; Copyright 2021 | Stride Ventures | All Rights Reserved
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: false,
+                duration: 1200,
+            });
+        </script>
+        <script src="./assets/javascripts/global.js"></script>
+    </body>
+</html>
