@@ -432,6 +432,50 @@ footer {
   background-color: #282c67;
 }
 
+.bira {
+    background-color: #ed1b23;
+}
+
+.salesken {
+    background-color: #ed4d68;
+}
+
+.avail {
+    background-color: #38bb8f;
+}
+
+.moneyview {
+    background-color: #70b934;
+}
+
+.mensa {
+    background-color: #292929;
+}
+
+.arzoo {
+    background-color: #21c3e8;
+}
+
+.fleetx {
+    background-color: #1f3253;
+}
+
+.neeman {
+    background-color: #726658;
+}
+
+.faballey {
+    background-color: #000000;
+}
+
+.locofast {
+    background-color: #0277bd;
+}
+
+.blusmart {
+    background-color: #1e5fbf;
+}
+
 #about {
   /* height: 45vh; */
   padding: 3vh 0 6vh 0;
