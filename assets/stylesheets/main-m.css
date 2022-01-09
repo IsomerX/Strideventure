@@ -691,7 +691,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   /* padding-bottom: 10px; */
 }
 

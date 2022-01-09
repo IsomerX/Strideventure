@@ -841,11 +841,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 .grid-item img {
   width: 100%;
+  background-color: black !;
 }
 
 .grid-item .news-title2 {
