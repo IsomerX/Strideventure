@@ -322,7 +322,7 @@ p.text {
   align-items: flex-end;
   transition: 0.3s all ease-in-out;
   color: white;
-  padding: 1vh 3vh 1vh 3vh;
+  padding: 1vh 1vh 1vh 2vh;
 }
 
 .orange{
